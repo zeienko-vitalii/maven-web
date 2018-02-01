@@ -1,0 +1,94 @@
+@import "main.css";
+
+#customers {
+    font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+}
+
+#customers td, #customers th {
+    border: 1px solid #ddd;
+    padding: 8px;
+}
+
+#customers tr:nth-child(even){
+    background-color: #f2f2f2;
+}
+
+#customers tr:hover {
+    background-color: #ddd;
+}
+
+#customers th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: left;
+    background-color: #4CAF50;
+    color: white;
+}
+
+
+/*============================================*/
+div.login-box {
+    position: relative;
+    margin: 15%;
+    width:auto;
+    height: auto;
+    /* background:  rgba(255, 255, 255, 0.6);  #FFF; */
+    background: linear-gradient(to right, rgba(189, 189, 189, 0.6),  rgba(77, 77, 77, 0.6)); /* Standard syntax (must be last) */
+    border-radius: 2px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.8);
+  }
+  
+  div.login-fields{
+    padding: 25px 1px 0 55px;
+  }
+  
+  div.login-box h1 {
+    padding: 5px 0 0 0;
+    margin: 50% 0 20px 0;
+    font-weight: 300;
+    font-size: 28px;
+    text-align: center;
+    color: #FFF;
+  }
+    
+  input[type="submit"] {
+    
+    padding: 5%;
+    margin-top: 5px;
+    /* margin-left: 5px; */
+    /* width: auto;
+    height: auto; */
+    width: 245px;
+    height: 45px;
+    background: #16a085;
+    border: none;
+    border-radius: 2px;
+    color: #FFF;
+    font-family: "Roboto", sans-serif;
+    font-weight: 50px;
+    font-size: 115%;
+    text-transform: uppercase;
+    transition: 0.3s ease;
+    cursor: pointer;
+  }
+  
+  
+  input[type="submit"]:hover,
+  input[type="submit"]:focus {
+    opacity: 0.8;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.4);
+    transition: 0.2s ease;
+  }
+  
+  input[type="submit"]:active {
+    opacity: 1;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.4);
+    transition: 0.1s ease;
+  }
+  
+  form {
+       display: inline; 
+  }
+  

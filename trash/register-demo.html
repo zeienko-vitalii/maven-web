@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+        <meta charset="utf-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Registration</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" type="text/css" media="screen" href="register.css" />
+</head>
+<body>
+
+
+<header>
+        <ul>
+                <li>
+                    <form>
+                        <select id="language" name="language" onchange="submit()">
+                            <option value="en" ${language == 'en' ? 'selected' : ''}>en</option>
+                            <option value="ru" ${language == 'ru' ? 'selected' : ''}>ru</option>
+                        </select>
+                    </form>
+                </li>
+        </ul>            
+</header>
+    
+
+
+<!--=========================================================================== 
+Hidden field. In the query it will act as command=login.
+The purpose of this to define the command name, which have to be executed 
+after you submit current form. 
+===========================================================================-->
+<!--   <input type="hidden" name="command" value="register" /> -->
+<table id="main_container">
+    <tr>
+        <td>
+                <form id="login_form" action="Controller" method="post">
+                        <fieldset>
+                            <legend>                
+                              <!--  <label for="username"><fmt:message key="registration_jsp.label.username" /></label> -->
+                              <label for="username">Username</label>
+                            </legend>
+                            <input name="username" /><br />
+                        </fieldset>
+                        <br />
+                        <fieldset>
+                            <legend>                
+                                <!-- <label for="username"><fmt:message key="registration_jsp.label.first_name" /></label> -->
+                                <label for="username">Name</label>
+                            </legend>
+                            <input name="first_name" /><br />
+                        </fieldset>
+                        <br />
+                        <fieldset>
+                            <legend>                
+                                <!-- <label for="username"><fmt:message key="registration_jsp.label.last_name" />:</label> -->
+                                <label for="username">Last name</label>
+                            </legend>
+                            <input name="last_name" /><br />
+                        </fieldset>
+                        <br />
+                        <fieldset>
+                            <legend>
+                                <!-- <fmt:message key="login_jsp.label.password" /> -->
+                                <label for="username">Password</label>
+                            </legend>
+                            <input type="password" name="password" />
+                        </fieldset>
+                        <br /> 
+                        <!-- <input type="submit" value='<fmt:message key="login_jsp.button.register"/>' name="command" value="register"> -->
+                        <input for="reg" type="submit" value='Enter' name="command" value="register">
+                        <!-- <a href="login.jsp">Sign In</a> -->
+                        
+                        <!-- <input type="submit" value='<fmt:message key="login_jsp.button.login_page"/>'> -->
+                    </form> <!-- CONTENT -->
+                    <input for="reg" type="submit" value="Go to my link location" 
+                            onclick="window.location='/main_page-demo.html';" />  
+        </td>
+    </tr>
+</table>
+
+</body>
+</html>
