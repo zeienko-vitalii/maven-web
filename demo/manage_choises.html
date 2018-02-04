@@ -13,7 +13,7 @@
     <meta name="keywords" content="жд, железнодорожные, билеты, стоимость, купить, онлайн, цена, дешевые, Украина, расписание поездов, дешево, наличие мест.">
     <meta name="viewport" content="width=1280, User-scalable=1.0">
     <link rel="icon" type="image/png" href="main_icon.png">
-    <link rel="stylesheet" type="text/css" media="screen" href="home_page.css" />
+    <link rel="stylesheet" type="text/css" media="screen" href="manage_choises.css" />
     <!-- <script type="text/javascript" src="validation.js"></script> -->
 </head>
 
@@ -36,25 +36,16 @@
         </ul>
     </nav>
 
-    <div class="search-box">
+    <div class="choise-box">
         <!-- FMT REGISTRATION-->
-        <h1>Search</h1>
+        <h1>Choose an act:</h1>
         <hr>
-        <div class="search-fields">
-
-            <!-- <input type="hidden" name="command" value="register"> -->
-            <form action="/Controller" method="post">
-                <!-- Departure station -->
-                <input type="text" name="from_station" id="from_station" placeholder="From" required/>
-
-                <!-- Arrival station -->
-                <input type="text" name="to_station" id="to_station" placeholder="To" required/>
-
-                <!-- <input type="submit" value='<fmt:message key="login_jsp.button.register"/>' name="command" value="register"> -->
-                <input for="signin" type="submit" class="button" name="command" value="search">
+        <div class="choise-fields">
+                <input type="submit" value="Manage rotes" onclick="window.location='manage_routes.html';" />
+                <input type="submit" value="Create route" onclick="window.location='create_route.html';" />
             </form>
         </div>
-    </div>
+    </div> 
 
 </body>
 
