@@ -1,0 +1,83 @@
+@import "main.css";
+
+div.create-box {
+  position: relative;
+  margin: auto;
+  width: 625px;
+  height: 235px;
+  background:  rgba(0, 0, 0, 0.6);  /* #FFF; */
+  border-radius: 2px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.8);
+}
+
+div.create-fields{
+  padding: 25px 1px 0 5px;
+}
+ 
+div.create-box h1 {
+  padding: 5px 0 0 0;
+  /* margin: 50% 0 20px 0; */
+  margin: 50% 0 20px 0;
+  font-weight: 300;
+  font-size: 28px;
+  text-align: center;
+  color: #FFF;
+}
+
+input[type="text"]{
+  display: inline;
+  box-sizing: border-box;
+  margin: 0 15px 15px 25px;
+  padding: 15px;
+  width: 245px;
+  height: 50px;
+  border: none;
+  border-bottom: 1px solid #AAA;
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-size: 20px;
+  transition: 0.2s ease;
+  content: "\2709";
+}
+
+input[type="text"]:focus{
+  border-bottom: 2px solid #16a085;
+  color: #16a085;
+  transition: 0.2s ease;
+}
+
+input[type="submit"] {
+  padding: 1%;
+  margin: 5px 0 0 25%;
+  width: 245px;
+  height: 45px;
+  background: #16a085;
+  border: none;
+  border-radius: 2px;
+  color: #FFF;
+  font-family: "Roboto", sans-serif;
+  font-weight: 25px;
+  font-size: 125%;
+  text-transform: uppercase;
+  transition: 0.3s ease;
+  cursor: pointer;
+}
+
+
+input[type="submit"]:hover,
+input[type="submit"]:focus {
+  opacity: 0.8;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.4);
+  transition: 0.2s ease;
+}
+
+input[type="submit"]:active {
+  opacity: 1;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.4);
+  transition: 0.1s ease;
+}
+
+form {
+     display: inline; 
+     padding: -25px 0 0 35px;
+}

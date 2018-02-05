@@ -35,54 +35,16 @@
 
     <div class="login-box ">
 
-        <table id="customers">
-            <tr>
-                <th>Company</th>
-                <th>Contact</th>
-                <th>Country</th>
-                <th>Routes</th>
-            </tr>
-            <tr>
-                <td>Alfreds Futterkiste</td>
-                <td>Maria Anders</td>
-                <td>Germany</td>
-                <td>
-                    <form action="/Controller" method="post">
-                        <input for="signin" type="submit" class="button" name="command" value="go">
-                    </form>
-                </td>
-            </tr>
-            <tr>
-                <td>Berglunds snabbköp</td>
-                <td>Christina Berglund</td>
-                <td>Sweden</td>
-                <td>
-                    <form action="/Controller" method="post">
-                        <input for="signin" type="submit" value="go" onclick="window.location='register.html';" />
-                    </form>
-                </td>
-            </tr>
-            <tr>
-                <td>Berglunds snabbköp</td>
-                <td>Christina Berglund</td>
-                <td>Sweden</td>
-                <td>
-                    <form action="/Controller" method="post">
-                        <input for="signin" type="submit" value="go" onclick="window.location='register.html';" />
-                    </form>
-                </td>
-            </tr>
-            <tr>
-                <td>Berglunds snabbköp</td>
-                <td>Christina Berglund</td>
-                <td>Sweden</td>
-                <td>
-                    <form action="/Controller" method="post">
-                        <input for="signin" type="submit" value="go" onclick="window.location='register.html';" />
-                    </form>
-                </td>
-            </tr>
-        </table>
+        <p>
+            <label for="date">Enter date:</label>
+            <input id="date" type="date" value="" name="date"/> 
+            <br>
+            <label for="time">Enter time:</label>
+            <input id="time" type="time" value="" name="time"/> 
+            <br>
+            <label for="datetime">Enter datetime:</label>
+            <input id="datetime" type="datetime-local" value="" name="datetime"/> 
+        </p>
         <!-- <input type="hidden" id="hiddenField"/> -->
         <button onclick="myFunction()">Try it</button>
     </div>
