@@ -14,7 +14,7 @@
     <meta name="viewport" content="width=1280, User-scalable=1.0">
     <link rel="icon" type="image/png" href="main_icon.png">
 
-    <link rel="stylesheet" type="text/css" media="screen" href="search_result.css" />
+    <link rel="stylesheet" type="text/css" media="screen" href="create_route.css" />
     <!-- <script type="text/javascript" src="validation.js"></script> -->
 </head>
 
@@ -25,38 +25,329 @@
             <li>
                 <a href="home_page.html">Home</a>
             </li>
-            <about>
-                <li>
-                    <a href="#">Profile</a>
-                </li>
-            </about>
+            <li>
+                <a href="register.html">Profile</a>
+            </li>
+            <li>
+                <a href="manage_choises.html">Manage</a>
+            </li>
         </ul>
     </nav>
 
-    <div class="login-box ">
+    <div id="fields" class="create-box">
+        <div class="create-fields">
+            <form id="actions" action="Controller" method="post">
+                <div class="data_list" id="data_list">
+                    <input type="hidden" name="command" value="parsing">
 
-        <p>
-            <label for="date">Enter date:</label>
-            <input id="date" type="date" value="" name="date"/> 
-            <br>
-            <label for="time">Enter time:</label>
-            <input id="time" type="time" value="" name="time"/> 
-            <br>
-            <label for="datetime">Enter datetime:</label>
-            <input id="datetime" type="datetime-local" value="" name="datetime"/> 
-        </p>
+                    <h1>
+                        Train information
+                        <!-- <fmt:message key="create_route.p.start_station" /> -->
+                    </h1>
+                    <label>
+                        Number
+                    </label>
+                    <!-- <fmt:message key="create_route.placeholder.end_staion "/> -->
+                    <input id="number_wagons" type="text" placeholder="Enter Name" name="number_wagons" pattern="[0-9]" required/>
+                    <br>
+
+                    <label>
+                        Amount of wagons
+                    </label>
+                    <input id="wagons_amount" type="text" placeholder="Enter Name" name="wagons_amount" required/>
+                    <br>
+
+                    <label>
+                        <span> Wagon type of COMPARTMENT</span>
+                    </label>
+                    <input id="compartment_amount" type="text" placeholder="Enter wagon amount" name="compartment_amount" pattern="[0-9]" required/>
+                    <input id="compartment_free_places" type="text" placeholder="Enter free place" name="compartment_free_places" pattern="[0-9]"
+                        required/>
+                    <input id="compartment_place_cost" type="text" placeholder="Enter cost" name="compartment_place_cost" pattern="[0-9]" required/>
+                    <br>
+                    <label>
+                        <span>Wagon type of RESERVED</span>
+                    </label>
+                    <input id="resreved_amount" type="text" placeholder="Enter wagon amount" name="resreved_amount" pattern="[0-9]" required/>
+                    <input id="resreved_free_places" type="text" placeholder="Enter free place" name="resreved_free_places" pattern="[0-9]" required/>
+                    <input id="resreved_place_cost" type="text" placeholder="Enter cost" name="resreved_place_cost" pattern="[0-9]" required/>
+                    <br>
+                    <label>
+                        <span>Wagon type of COMMON</span>
+                    </label>
+                    <input id="common_amount" type="text" placeholder="Enter wagon amount" name="common_amount" pattern="[0-9]" required/>
+                    <input id="common_free_places" type="text" placeholder="Enter free place" name="common_free_places" pattern="[0-9]" required/>
+                    <input id="common_place_cost" type="text" placeholder="Enter cost" name="common_place_cost" pattern="[0-9]" pattern="[0-9]"
+                        required/>
+
+                    <br>
+
+                    <hr>
+                    <h1>
+                        Start station
+                        <!-- <fmt:message key="create_route.p.start_station" /> -->
+                    </h1>
+
+                    <label>
+                        Name
+                    </label>
+                    <input id="start_station" type="text" placeholder="Enter Name" name="start_station" required/>
+                    <br>
+                    <label>
+                        Date of departure
+                    </label>
+                    <input id="date_departure" type="date" value="" name="date_departure" required/>
+                    <br>
+                    <label>
+                        Time of departure
+                    </label>
+                    <input id="time_departure" type="time" value="" name="time_departure" required/>
+
+                    <hr>
+
+                    <h1>
+                        End station
+                        <!-- <fmt:message key="create_route.p.start_station" /> -->
+                    </h1>
+                    <label>
+                        Name
+                    </label>
+                    <!-- <fmt:message key="create_route.placeholder.end_staion "/> -->
+                    <input id="end_station" type="text" placeholder="Enter Name" name="end_station" required/>
+                    <br>
+                    <label>
+                        Date of arrival
+                    </label>
+                    <input id="date_arrival" type="date" value="" name="date_arrival" required/>
+                    <br>
+                    <label>
+                        Time of arrival
+                    </label>
+                    <input id="time_arrival" type="time" value="" name="time_arrival" required/>
+                    <br>
+                    <hr>
+                </div>
+        </div>
+
+        <input type="submit" class="button" value="Create">
+        <br>
+        </form>
+        <br>
+        <hr>
         <!-- <input type="hidden" id="hiddenField"/> -->
-        <button onclick="myFunction()">Try it</button>
+        <button class="button button_add" onclick="addElement()">Add</button>
+        <button class="button button_remove" onclick="removeElement()">Remove</button>
+        <button class="button button_back" onclick="window.location='manage_choises.html';">Back to manage</button>
     </div>
 
     <script>
 
-        var 
-        // document.getElementById("hiddenField").value=yourCalculatedVariable;
-        function myFunction() {
-            alert(document.getElementById("customers").rows[0].innerHTML);
+        var counter = 0;
+        var id_hr = "id_hr";
+        var id_brs = ["id_br1", "id_br2", "id_br3", "id_br4", "id_br5", "id_br6"];
+
+        var id_input_name = "stationname_id";
+        var name_input_name = "stationname_name";
+
+        var id_input_time_arr = "timearrival_id";
+        var name_input_time_arr = "timearrival_name";
+
+        var id_input_date_arr = "datearrival_id";
+        var name_input_date_arr = "datearrival_name";
+
+        var id_input_time_stay = "timestaying_id";
+        var name_input_time_stay = "timestaying_name";
+
+
+        var id_input_time_dep = "timedeparture_id";
+        var name_input_time_dep = "timedeparture_name";
+
+        var id_input_date_dep = "datedeparture_id";
+        var name_input_date_dep = "datedeparture_name";
+
+        var id_labels = ["label_id1", "label_id2", "label_id3", "label_id4", "label_id5", "label_id6"];
+
+        var id_intermediate_h1 = "header_id";
+
+        function removeElement() {
+            var parent = document.getElementById("data_list");
+
+            if (counter > 0) {
+                --counter;
+            }
+
+            var hr = document.getElementById(id_hr + counter);
+            var header = document.getElementById(id_intermediate_h1 + counter);
+
+            var brs = [document.getElementById(id_brs[0] + counter),
+            document.getElementById(id_brs[1] + counter),
+            document.getElementById(id_brs[2] + counter),
+            document.getElementById(id_brs[3] + counter),
+            document.getElementById(id_brs[4] + counter),
+            document.getElementById(id_brs[5] + counter)];
+
+            var label_name = document.getElementById(id_labels[0] + counter);
+            var label_time_arr = document.getElementById(id_labels[1] + counter);
+            var label_date_arr = document.getElementById(id_labels[2] + counter);
+            var label_time_stay = document.getElementById(id_labels[3] + counter);
+            var label_time_dep = document.getElementById(id_labels[4] + counter);
+            var label_date_dep = document.getElementById(id_labels[5] + counter);
+
+            // window.alert(label_name.innerText);
+            // window.alert(label_time_arr.innerText);
+            // window.alert(label_date_arr.innerText);
+            // window.alert(label_time_stay.innerText);
+            // window.alert(label_time_dep.innerText);
+            // window.alert(label_date_dep.innerText);
+
+            var input_name = document.getElementById(id_input_name + counter);
+            var input_time_arr = document.getElementById(id_input_time_arr + counter);
+            var input_date_arr = document.getElementById(id_input_date_arr + counter);
+            var input_time_stay = document.getElementById(id_input_time_stay + counter);
+            var input_time_dep = document.getElementById(id_input_time_dep + counter);
+            var input_date_dep = document.getElementById(id_input_date_dep + counter);
+
+            //window.alert(child.name);
+            parent.removeChild(header);
+            parent.removeChild(hr);
+            parent.removeChild(input_name);
+            parent.removeChild(input_time_arr);
+            parent.removeChild(input_date_arr);
+            parent.removeChild(input_time_stay);
+            parent.removeChild(input_time_dep);
+            parent.removeChild(input_date_dep);
+
+            parent.removeChild(label_name);
+            parent.removeChild(label_time_arr);
+            parent.removeChild(label_date_arr);
+            parent.removeChild(label_time_stay);
+            parent.removeChild(label_time_dep);
+            parent.removeChild(label_date_dep);
+
+            parent.removeChild(brs[0]);
+            parent.removeChild(brs[1]);
+            parent.removeChild(brs[2]);
+            parent.removeChild(brs[3]);
+            parent.removeChild(brs[4]);
+            parent.removeChild(brs[5]);
         }
-        </script>
+
+        function addElement() {
+            /*
+            time arr
+            date arr
+
+            time staying
+
+            time departure
+            date departure
+            */
+
+            var div_parent = document.getElementById("data_list");
+            var hr = document.createElement("hr");
+            var brs = [document.createElement("br"),
+            document.createElement("br"),
+            document.createElement("br"),
+            document.createElement("br"),
+            document.createElement("br"),
+            document.createElement("br"),];
+
+            var input_text = document.createElement("input");
+            var input_time_arr = document.createElement("input");
+            var input_date_arr = document.createElement("input");
+            var input_time_stay = document.createElement("input");
+            var input_time_dep = document.createElement("input");
+            var input_date_dep = document.createElement("input");
+
+            var header = document.createElement("h1");
+            var label_name = document.createElement("label");
+            var label_time_arr = document.createElement("label");
+            var label_date_arr = document.createElement("label");
+            var label_time_stay = document.createElement("label");
+            var label_time_dep = document.createElement("label");
+            var label_date_dep = document.createElement("label");
+
+            header.innerText = "Intermediate #" + counter;
+            header.id = id_intermediate_h1 + counter;
+
+            label_name.innerText = "Station name";
+            label_time_arr.innerText = "Time arrival";
+            label_date_arr.innerText = "Date arrival";
+            label_time_stay.innerText = "Time staying";
+            label_time_dep.innerText = "Time departure";
+            label_date_dep.innerText = "Date departure";
+
+            label_name.id = id_labels[0] + counter;
+            label_time_arr.id = id_labels[1] + counter;
+            label_date_arr.id = id_labels[2] + counter;
+            label_time_stay.id = id_labels[3] + counter;
+            label_time_dep.id = id_labels[4] + counter;
+            label_date_dep.id = id_labels[5] + counter;
+
+            input_text.type = "text";
+            input_time_arr.type = "time";
+            input_date_arr.type = "date";
+            input_time_stay.type = "time";
+            input_time_dep.type = "time";
+            input_date_dep.type = "date";
+
+            input_text.id = id_input_name + counter;
+            input_time_arr.id = id_input_time_arr + counter;
+            input_date_arr.id = id_input_date_arr + counter;
+            input_time_stay.id = id_input_time_stay + counter;
+            input_time_dep.id = id_input_time_dep + counter;
+            input_date_dep.id = id_input_date_dep + counter;
+
+            input_text.name = name_input_name + counter;
+            input_time_arr.name = name_input_time_arr + counter;
+            input_date_arr.name = name_input_date_arr + counter;
+            input_time_stay.name = name_input_time_stay + counter;
+            input_time_dep.name = name_input_time_dep + counter;
+            input_date_dep.name = name_input_date_dep + counter;
+
+            hr.id = id_hr + counter;
+            brs[0].id = id_brs[0] + counter;
+            brs[1].id = id_brs[1] + counter;
+            brs[2].id = id_brs[2] + counter;
+            brs[3].id = id_brs[3] + counter;
+            brs[4].id = id_brs[4] + counter;
+            brs[5].id = id_brs[5] + counter;
+
+            div_parent.appendChild(header);
+            // name
+            div_parent.appendChild(label_name);
+            div_parent.appendChild(input_text);
+            div_parent.appendChild(brs[0]);
+
+            // time arr
+            div_parent.appendChild(label_time_arr);
+            div_parent.appendChild(input_time_arr);
+            div_parent.appendChild(brs[1]);
+
+            // date arr
+            div_parent.appendChild(label_date_arr);
+            div_parent.appendChild(input_date_arr);
+            div_parent.appendChild(brs[2]);
+            // time staying
+            div_parent.appendChild(label_time_stay);
+            div_parent.appendChild(input_time_stay);
+            div_parent.appendChild(brs[3]);
+            // time dep
+            div_parent.appendChild(label_time_dep);
+            div_parent.appendChild(input_time_dep);
+            div_parent.appendChild(brs[4]);
+            // date dep
+            div_parent.appendChild(label_date_dep);
+            div_parent.appendChild(input_date_dep);
+            div_parent.appendChild(brs[5]);
+            div_parent.appendChild(hr);
+            //div_parent.appendChild(br);
+            // window.alert(counter);
+            counter++;
+        }
+
+    </script>
 
 </body>
+
 </html>

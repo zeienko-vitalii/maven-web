@@ -20,18 +20,25 @@
 <body>
     <div id="background"></div>
     <nav>
-            <ul>
-                <li><a href="home_page.html">Home</a></li>
-                <li><a href="#">Profile</a></li>
-                <li>
-                    <select id="language" name="language" onchange="submit()">
-                        <option value="en" ${language == 'en' ? 'selected' : ''}>English</option>
-                        <option value="ru" ${language == 'ru' ? 'selected' : ''}>Russian</option>
-                    </select>
-                </li>
-            </ul>
-        </nav>
-  
+        <ul>
+            <li>
+                <a href="home_page.html">Home</a>
+            </li>
+            <li>
+                <a href="#">Profile</a>
+            </li>
+            <li>
+                <select id="language" name="language" onchange="submit()">
+                    <option value="en" ${language=='en' ? 'selected' : ''}>English</option>
+                    <option value="ru" ${language=='ru' ? 'selected' : ''}>Russian</option>
+                </select>
+            </li>
+            <li>
+                <a href="manage_choises.html">Manage</a>
+            </li>
+        </ul>
+    </nav>
+
 
     <div class="login-box">
         <!-- FMT REGISTRATION-->
@@ -44,7 +51,7 @@
             <form action="/Controller" method="post">
                 <!-- Login -->
                 <input type="text" name="login" id="login" placeholder="Login" required/>
-               
+
                 <!-- Password -->
                 <input type="password" name="password" id="password" placeholder="Password" required/>
 

@@ -2,62 +2,91 @@
 
 div.create-box {
   position: relative;
-  margin: auto;
-  width: 625px;
-  height: 235px;
+  /* margin: 100%; */
+  width: 100%;
+  height: 100%;
   background:  rgba(0, 0, 0, 0.6);  /* #FFF; */
   border-radius: 2px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.8);
 }
 
-div.create-fields{
-  padding: 25px 1px 0 5px;
-}
- 
 div.create-box h1 {
-  padding: 5px 0 0 0;
+  /* padding: 5px 0 0 0; */
   /* margin: 50% 0 20px 0; */
-  margin: 50% 0 20px 0;
+  margin: 0 0 20px 0;
   font-weight: 300;
   font-size: 28px;
   text-align: center;
   color: #FFF;
 }
 
-input[type="text"]{
-  display: inline;
+/* div.right-allign {
+  float: right;
+  margin: 0 0 5% 0;
+}
+
+div.left-allign {
+  float: left;
+  margin: 0 0 5% 0;
+} */
+
+div.create-fields{
+  padding: 25px 1px 0 5px;
+}
+
+div.data_list{
+  margin: 0;
+  padding: 0;
+  overflow: auto;
+}
+
+div.data_list h1{
+  /* margin: 50% 0 20px 0; */
+  font-weight: 150;
+  font-size: 20px;
+  text-align: left;
+  color: #FFF;
+}
+
+input[type="text"], 
+input[type="time"],
+input[type="date"]{
+  display: inline-bock;
   box-sizing: border-box;
-  margin: 0 15px 15px 25px;
-  padding: 15px;
-  width: 245px;
-  height: 50px;
+  margin: 0 13px 13px 15px;
+  padding: 10px;
+  width: 165px;
+  height: 33px;
   border: none;
   border-bottom: 1px solid #AAA;
   font-family: "Roboto", sans-serif;
-  font-weight: 400;
-  font-size: 20px;
+  font-weight: 100;
+  font-size: 14px;
   transition: 0.2s ease;
   content: "\2709";
 }
 
-input[type="text"]:focus{
+input[type="text"]:focus,
+ input[type="time"]:focus,
+  input[type="date"]:focus{
   border-bottom: 2px solid #16a085;
   color: #16a085;
   transition: 0.2s ease;
 }
 
 input[type="submit"] {
-  padding: 1%;
-  margin: 5px 0 0 25%;
-  width: 245px;
-  height: 45px;
+  float: left;
+  padding: 0 0 0 0;
+  margin: 0 0 0 3%;
+  width: 145px;
+  height: 30px;
   background: #16a085;
   border: none;
   border-radius: 2px;
   color: #FFF;
   font-family: "Roboto", sans-serif;
-  font-weight: 25px;
-  font-size: 125%;
+  /* font-weight: 10px; */
+  font-size: 100%;
   text-transform: uppercase;
   transition: 0.3s ease;
   cursor: pointer;
@@ -80,4 +109,68 @@ input[type="submit"]:active {
 form {
      display: inline; 
      padding: -25px 0 0 35px;
+}
+
+.button {
+  background-color: #4CAF50; /* Green */
+  border: none;
+  color: white;
+  /* padding: 16px 32px; */
+  width: 145px;
+  height: 35px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  -webkit-transition-duration: 0.4s; /* Safari */
+  transition-duration: 0.4s;
+  cursor: pointer;
+  border-radius: 2px;
+}
+
+.button_add {
+  background-color: rgb(220, 255, 228); 
+  color: black; 
+  border: 2px solid #4CAF50;
+}
+
+.button_add:hover {
+  background-color: #4CAF50;
+  color: white;
+}
+
+.button_remove {
+  background-color: rgb(255, 209, 209); 
+  color: black; 
+  border: 2px solid #f44336;
+}
+
+.button_remove:hover {
+  background-color: #f44336;
+  color: white;
+}
+
+
+.button_back {
+  background-color: rgb(221, 221, 221); 
+  color: rgb(0, 0, 0); 
+  border: 2px solid #2c2c2c;
+}
+
+.button_back:hover {
+  background-color: #424242;
+  color: white;
+}
+
+hr{
+  border : 0;
+  height: 1px; 
+  background-image: linear-gradient(to right, rgba( 0, 0, 0, 0), rgba(255, 255, 255, 0.75), rgba(0, 0, 0, 0));  
+  margin: 1% 0 1% 0;
+}
+
+label{
+  color: white;
+  margin: 0 0 0 5%;
 }

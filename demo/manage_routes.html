@@ -14,7 +14,7 @@
     <meta name="viewport" content="width=1280, User-scalable=1.0">
     <link rel="icon" type="image/png" href="main_icon.png">
 
-    <link rel="stylesheet" type="text/css" media="screen" href="search_result.css" />
+    <link rel="stylesheet" type="text/css" media="screen" href="manage_routes.css" />
     <!-- <script type="text/javascript" src="validation.js"></script> -->
 </head>
 
@@ -25,11 +25,14 @@
             <li>
                 <a href="home_page.html">Home</a>
             </li>
-            <about>
-                <li>
-                    <a href="#">Profile</a>
-                </li>
-            </about>
+
+            <li>
+                <a href="#">Profile</a>
+            </li>
+
+            <li>
+                <a href="manage_choises.html">Manage</a>
+            </li>
         </ul>
     </nav>
 
@@ -37,7 +40,7 @@
 
         <table id="customers">
             <tr>
-                <th>Company</th>
+                <th>Route name</th>
                 <th>Contact</th>
                 <th>Country</th>
                 <th>Routes</th>
@@ -47,8 +50,8 @@
                 <td>Maria Anders</td>
                 <td>Germany</td>
                 <td>
-                    <form action="/Controller" method="post">
-                        <input for="signin" type="submit" class="button" name="command" value="go">
+                    <form action="Controller" method="post">
+                        <input for="signin" type="submit" class="button" name="command" value="->">
                     </form>
                 </td>
             </tr>
@@ -57,44 +60,33 @@
                 <td>Christina Berglund</td>
                 <td>Sweden</td>
                 <td>
-                    <form action="/Controller" method="post">
+                    <form action="Controller" method="post">
                         <input for="signin" type="submit" value="go" onclick="window.location='register.html';" />
                     </form>
                 </td>
             </tr>
-            <tr>
-                <td>Berglunds snabbköp</td>
-                <td>Christina Berglund</td>
-                <td>Sweden</td>
-                <td>
-                    <form action="/Controller" method="post">
-                        <input for="signin" type="submit" value="go" onclick="window.location='register.html';" />
-                    </form>
-                </td>
-            </tr>
-            <tr>
-                <td>Berglunds snabbköp</td>
-                <td>Christina Berglund</td>
-                <td>Sweden</td>
-                <td>
-                    <form action="/Controller" method="post">
-                        <input for="signin" type="submit" value="go" onclick="window.location='register.html';" />
-                    </form>
-                </td>
-            </tr>
+           
         </table>
+
+        <ul class"box">
+            <li class="all">
+                Element
+            </li>
+        </ul>
+
         <!-- <input type="hidden" id="hiddenField"/> -->
         <button onclick="myFunction()">Try it</button>
     </div>
 
     <script>
 
-        var 
+        var
         // document.getElementById("hiddenField").value=yourCalculatedVariable;
         function myFunction() {
             alert(document.getElementById("customers").rows[0].innerHTML);
         }
-        </script>
+    </script>
 
 </body>
+
 </html>

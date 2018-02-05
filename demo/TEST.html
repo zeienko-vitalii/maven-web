@@ -1,0 +1,833 @@
+<!DOCTYPE html>
+<html><head>
+        <title>ЖД билеты онлайн PROIZD™ – билеты на поезд по Украине и СНГ.</title>
+        <meta name="description" content="Сервис по продаже ж/д билетов онлайн &quot;Проезд&quot; - лучший выбор, если нужно купить билет на поезд по Украине или СНГ. Заходи!">
+        <meta name="keywords" content="жд, железнодорожные, билеты, стоимость, купить, онлайн, цена, дешевые, Украина, расписание поездов, дешево, наличие мест.">
+<!--       
+        <meta name="google-site-verification" content="HBP2bggHjAiAV8r_e0TEqLiXbVGAtLvK9-DCpfTZWhI">
+        <meta name="yandex-verification" content="6e349ffeeecdca50">
+       -->
+        
+        <base href="/">
+        <meta name="viewport" content="width=1280, User-scalable=1.0">
+        <meta name="google-site-verification" content="HBP2bggHjAiAV8r_e0TEqLiXbVGAtLvK9-DCpfTZWhI">
+        <meta name="yandex-verification" content="6e349ffeeecdca50">
+        <link rel="icon" type="image/png" href="assets/favicon.png">
+        <link rel="alternate" hreflang="ru" href="https://proizd.ua/">
+        <link rel="alternate" hreflang="uk" href="https://proizd.ua/ua/">
+        <link rel="alternate" hreflang="en" href="https://proizd.ua/en/">
+      
+        
+        <link rel="stylesheet" href="TESTcss">
+    
+        <script async="" src="//connect.facebook.net/en_US/fbevents.js"></script><script async="" src="//www.google-analytics.com/analytics.js"></script><script>
+          /*<![CDATA[*/
+          window.device = 'desktop';
+          window.noZensmooth = true;
+          if ('scrollRestoration' in history) {
+            history.scrollRestoration = 'manual';
+          }
+          /*]]>*/
+        </script>
+        <!--[if IE 11]>
+          <script src="entry-scripts/system-polyfills-ad7c7bfbee.js"></script>
+        <![endif]-->
+        <!-- <script src="entry-scripts/system-4a217e4dee.js"></script>
+        <script src="entry-scripts/system-2c1bfa529f.config.js"></script> -->
+        <script>
+          /*<![CDATA[*/
+          Application.model = {'cisPopularDirections':[{'codeFrom':'2204001','codeTo':'2100001','currency':{'$type':'Currency','$name':'UAH'},'destination':{'$type':'TripDirection','$name':'CIS'},'id':'12','nameFrom':'\u0425\u0430\u0440\u044C\u043A\u043E\u0432','nameTo':'\u041C\u0438\u043D\u0441\u043A','price':997.0,'transportType':{'$type':'TransportType','$name':'TRAIN'}},{'codeFrom':'2218000','codeTo':'2000007','currency':{'$type':'Currency','$name':'UAH'},'destination':{'$type':'TripDirection','$name':'CIS'},'id':'305','nameFrom':'\u041B\u044C\u0432\u043E\u0432','nameTo':'\u041C\u043E\u0441\u043A\u0432\u0430 \u041A\u0438\u0435\u0432\u0441\u043A\u0430\u044F','price':1776.0,'transportType':{'$type':'TransportType','$name':'TRAIN'}},{'codeFrom':'2208001','codeTo':'2000007','currency':{'$type':'Currency','$name':'UAH'},'destination':{'$type':'TripDirection','$name':'CIS'},'id':'303','nameFrom':'\u041E\u0434\u0435\u0441\u0441\u0430','nameTo':'\u041C\u043E\u0441\u043A\u0432\u0430 \u041A\u0438\u0435\u0432\u0441\u043A\u0430\u044F','price':1863.0,'transportType':{'$type':'TransportType','$name':'TRAIN'}},{'codeFrom':'2200001','codeTo':'2000007','currency':{'$type':'Currency','$name':'UAH'},'destination':{'$type':'TripDirection','$name':'CIS'},'id':'11','nameFrom':'\u041A\u0438\u0435\u0432','nameTo':'\u041C\u043E\u0441\u043A\u0432\u0430 \u041A\u0438\u0435\u0432\u0441\u043A\u0430\u044F','price':1276.0,'transportType':{'$type':'TransportType','$name':'TRAIN'}},{'codeFrom':'2218000','codeTo':'2000007','currency':{'$type':'Currency','$name':'UAH'},'destination':{'$type':'TripDirection','$name':'CIS'},'id':'15','nameFrom':'\u041B\u044C\u0432\u043E\u0432','nameTo':'\u041C\u043E\u0441\u043A\u0432\u0430 \u041A\u0438\u0435\u0432\u0441\u043A\u0430\u044F','price':1776.0,'transportType':{'$type':'TransportType','$name':'TRAIN'}}],'device':'desktop','europePopularDirections':null,'lastDirections':[{'buyTime':'2018-02-05 23:19:47','codeFrom':'2200001','codeTo':'2208001','currency':{'$type':'Currency','$name':'UAH'},'nameFrom':'\u041A\u0438\u0435\u0432','nameTo':'\u041E\u0434\u0435\u0441\u0441\u0430','price':378.7,'seconds':65,'transportType':{'$type':'TransportType','$name':'TRAIN'}},{'buyTime':'2018-02-05 23:19:17','codeFrom':'2210900','codeTo':'2200001','currency':{'$type':'Currency','$name':'UAH'},'nameFrom':'\u041A\u0440\u0438\u0432\u043E\u0439 \u0420\u043E\u0433','nameTo':'\u041A\u0438\u0435\u0432','price':153.81,'seconds':95,'transportType':{'$type':'TransportType','$name':'TRAIN'}},{'buyTime':'2018-02-05 23:18:07','codeFrom':'2200001','codeTo':'2218400','currency':{'$type':'Currency','$name':'UAH'},'nameFrom':'\u041A\u0438\u0435\u0432','nameTo':'\u0420\u043E\u0432\u043D\u043E','price':80.6,'seconds':165,'transportType':{'$type':'TransportType','$name':'TRAIN'}},{'buyTime':'2018-02-05 23:12:07','codeFrom':'2208001','codeTo':'2218400','currency':{'$type':'Currency','$name':'UAH'},'nameFrom':'\u041E\u0434\u0435\u0441\u0441\u0430','nameTo':'\u0420\u043E\u0432\u043D\u043E','price':216.79,'seconds':525,'transportType':{'$type':'TransportType','$name':'TRAIN'}},{'buyTime':'2018-02-05 23:12:00','codeFrom':'2208001','codeTo':'2218400','currency':{'$type':'Currency','$name':'UAH'},'nameFrom':'\u041E\u0434\u0435\u0441\u0441\u0430','nameTo':'\u0420\u043E\u0432\u043D\u043E','price':216.79,'seconds':532,'transportType':{'$type':'TransportType','$name':'TRAIN'}},{'buyTime':'2018-02-05 23:10:53','codeFrom':'2200001','codeTo':'2200242','currency':{'$type':'Currency','$name':'UAH'},'nameFrom':'\u041A\u0438\u0435\u0432','nameTo':'\u0413\u043D\u0438\u0432\u0430\u043D\u044C','price':116.8,'seconds':599,'transportType':{'$type':'TransportType','$name':'TRAIN'}},{'buyTime':'2018-02-05 23:10:31','codeFrom':'2218255','codeTo':'2200300','currency':{'$type':'Currency','$name':'UAH'},'nameFrom':'\u042F\u0440\u0435\u043C\u0447\u0435','nameTo':'\u0425\u043C\u0435\u043B\u044C\u043D\u0438\u0446\u043A\u0438\u0439','price':276.51,'seconds':621,'transportType':{'$type':'TransportType','$name':'TRAIN'}},{'buyTime':'2018-02-05 23:07:14','codeFrom':'2200001','codeTo':'2200300','currency':{'$type':'Currency','$name':'UAH'},'nameFrom':'\u041A\u0438\u0435\u0432','nameTo':'\u0425\u043C\u0435\u043B\u044C\u043D\u0438\u0446\u043A\u0438\u0439','price':201.83,'seconds':818,'transportType':{'$type':'TransportType','$name':'TRAIN'}},{'buyTime':'2018-02-05 23:07:02','codeFrom':'2210800','codeTo':'2210900','currency':{'$type':'Currency','$name':'UAH'},'nameFrom':'\u0417\u0430\u043F\u043E\u0440\u043E\u0436\u044C\u0435 1','nameTo':'\u041A\u0440\u0438\u0432\u043E\u0439 \u0420\u043E\u0433','price':45.53,'seconds':830,'transportType':{'$type':'TransportType','$name':'TRAIN'}},{'buyTime':'2018-02-05 23:03:28','codeFrom':'2218270','codeTo':'2200001','currency':{'$type':'Currency','$name':'UAH'},'nameFrom':'\u0420\u0430\u0445\u043E\u0432','nameTo':'\u041A\u0438\u0435\u0432','price':179.43,'seconds':1044,'transportType':{'$type':'TransportType','$name':'TRAIN'}}],'serviceDisabled':null,'serviceMessageEn':null,'serviceMessageRu':null,'serviceMessageUk':null,'ticketsCount':568001,'ukrainianPopularDirections':[{'codeFrom':'2200001','codeTo':'2218000','currency':{'$type':'Currency','$name':'UAH'},'destination':{'$type':'TripDirection','$name':'UKRAINE'},'id':'1','nameFrom':'\u041A\u0438\u0435\u0432','nameTo':'\u041B\u044C\u0432\u043E\u0432','price':14.67,'transportType':{'$type':'TransportType','$name':'TRAIN'}},{'codeFrom':'2218000','codeTo':'2218095','currency':{'$type':'Currency','$name':'UAH'},'destination':{'$type':'TripDirection','$name':'UKRAINE'},'id':'10','nameFrom':'\u041B\u044C\u0432\u043E\u0432','nameTo':'\u0423\u0436\u0433\u043E\u0440\u043E\u0434','price':26.31,'transportType':{'$type':'TransportType','$name':'TRAIN'}},{'codeFrom':'2200001','codeTo':'2208001','currency':{'$type':'Currency','$name':'UAH'},'destination':{'$type':'TripDirection','$name':'UKRAINE'},'id':'2','nameFrom':'\u041A\u0438\u0435\u0432','nameTo':'\u041E\u0434\u0435\u0441\u0441\u0430','price':72.83,'transportType':{'$type':'TransportType','$name':'TRAIN'}},{'codeFrom':'2208001','codeTo':'2218000','currency':{'$type':'Currency','$name':'UAH'},'destination':{'$type':'TripDirection','$name':'UKRAINE'},'id':'6','nameFrom':'\u041E\u0434\u0435\u0441\u0441\u0430','nameTo':'\u041B\u044C\u0432\u043E\u0432','price':107.15,'transportType':{'$type':'TransportType','$name':'TRAIN'}},{'codeFrom':'2210700','codeTo':'2200001','currency':{'$type':'Currency','$name':'UAH'},'destination':{'$type':'TripDirection','$name':'UKRAINE'},'id':'7','nameFrom':'\u0414\u043D\u0435\u043F\u0440','nameTo':'\u041A\u0438\u0435\u0432','price':94.62,'transportType':{'$type':'TransportType','$name':'TRAIN'}}],'userReviews':[{'authorName':'\u041D\u0430\u0442\u0430\u043B\u0438 \u0416\u0443\u0440\u0431\u0430','id':'6e0b8390-3bb8-4986-a86b-237d909d4a30','pictureUrl':'natali_zyrba','reviewText':'\u041E\u0447\u0435\u043D\u044C \u0443\u0434\u043E\u0431\u043D\u044B\u0439 \u0441\u0430\u0439\u0442 \u0434\u043B\u044F \u043F\u043E\u043A\u0443\u043F\u043E\u043A \u0431\u0438\u043B\u0435\u0442\u043E\u0432, \u0441\u043F\u0430\u0441\u0438\u0431\u043E!','type':{'$type':'TransportType','$name':'TRAIN'}},{'authorName':'\u0422\u0430\u0442\u044C\u044F\u043D\u0430 \u0421\u043B\u0435\u043F\u0447\u0435\u043D\u043A\u043E','id':'120b8390-3bb8-4986-a86b-237d909d4a30','pictureUrl':'tatiana_slepchenko','reviewText':'\u041A\u0443\u043F\u0438\u043B\u0430 \u0431\u0438\u043B\u0435\u0442 \u0447\u0435\u0440\u0435\u0437 \u044D\u0442\u043E\u0442 \u0441\u0430\u0439\u0442, \u043D\u0430 \u0442\u0435\u043B\u0435\u0444\u043E\u043D \u043F\u0440\u0438\u0448\u043B\u043E \u0441\u043C\u0441 (\u043F\u0440\u0438\u043D\u0442\u0435\u0440\u0430 \u0443 \u043C\u0435\u043D\u044F \u043D\u0435\u0442) \u0438 \u0431\u0435\u0437 \u043F\u0440\u043E\u0431\u043B\u0435\u043C, \u0438 \u0431\u044B\u0441\u0442\u0440\u043E \u0437\u0430\u0431\u0440\u0430\u043B\u0430 \u0431\u0438\u043B\u0435\u0442\u044B \u0432 \u043A\u0430\u0441\u0441\u0435. \u0421\u043F\u0430\u0441\u0438\u0431\u043E.','type':{'$type':'TransportType','$name':'TRAIN'}},{'authorName':'\u0422\u0430\u043D\u044F \u0420\u0430\u0434\u043E\u0441\u0442\u044C','id':'110b8390-3bb8-4986-a86b-237d909d4a30','pictureUrl':'tania_radost','reviewText':'\u041D\u0435 \u0441\u0442\u0430\u043B\u043A\u0438\u0432\u0430\u043B\u0430\u0441\u044C \u044F \u0441 \u043F\u0440\u043E\u0431\u043B\u0435\u043C\u0430\u043C\u0438, \u0447\u0442\u043E \u043A\u0430\u0441\u0430\u0435\u0442\u0441\u044F \u043E\u043D\u043B\u0430\u0439\u043D \u043F\u043E\u043A\u0443\u043F\u043A\u0438 \u0431\u0438\u043B\u0435\u0442\u043E\u0432. \u0412\u0441\u0435 \u0441\u0443\u043F\u0435\u0440! \u041F\u0440\u043E\u0441\u0442\u043E \u043D\u0443\u0436\u043D\u043E \u0431\u044B\u0442\u044C \u0432\u043D\u0438\u043C\u0430\u0442\u0435\u043B\u044C\u043D\u044B\u043C \u0438 \u0447\u0438\u0442\u0430\u0442\u044C \u0432\u0441\u044E \u0438\u043D\u0444\u043E\u0440\u043C\u0430\u0446\u0438\u044E. \u0422\u0430\u043C \u0432\u0441\u0435 \u043F\u0438\u0448\u0435\u0442\u0441\u044F \u0438 \u043E\u0431\u044A\u044F\u0441\u043D\u044F\u0435\u0442\u0441\u044F.','type':{'$type':'TransportType','$name':'TRAIN'}},{'authorName':'\u0422\u0430\u043D\u044F \u0420\u0430\u0434\u043E\u0441\u0442\u044C','id':'110b8390-3bb8-4986-a86b-237d909d4a30','pictureUrl':'tania_radost','reviewText':'\u041D\u0435 \u0441\u0442\u0430\u043B\u043A\u0438\u0432\u0430\u043B\u0430\u0441\u044C \u044F \u0441 \u043F\u0440\u043E\u0431\u043B\u0435\u043C\u0430\u043C\u0438, \u0447\u0442\u043E \u043A\u0430\u0441\u0430\u0435\u0442\u0441\u044F \u043E\u043D\u043B\u0430\u0439\u043D \u043F\u043E\u043A\u0443\u043F\u043A\u0438 \u0431\u0438\u043B\u0435\u0442\u043E\u0432. \u0412\u0441\u0435 \u0441\u0443\u043F\u0435\u0440! \u041F\u0440\u043E\u0441\u0442\u043E \u043D\u0443\u0436\u043D\u043E \u0431\u044B\u0442\u044C \u0432\u043D\u0438\u043C\u0430\u0442\u0435\u043B\u044C\u043D\u044B\u043C \u0438 \u0447\u0438\u0442\u0430\u0442\u044C \u0432\u0441\u044E \u0438\u043D\u0444\u043E\u0440\u043C\u0430\u0446\u0438\u044E. \u0422\u0430\u043C \u0432\u0441\u0435 \u043F\u0438\u0448\u0435\u0442\u0441\u044F \u0438 \u043E\u0431\u044A\u044F\u0441\u043D\u044F\u0435\u0442\u0441\u044F.','type':{'$type':'TransportType','$name':'TRAIN'}},{'authorName':'Leon Dorfman','id':'8e0b8390-3bb8-4986-a86b-237d909d4a30','pictureUrl':'leon_dorfman','reviewText':'\u0410 \u0432\u043E\u0442 \u044F \u0443\u0436\u0435 \u043E\u0447\u0435\u043D\u044C \u0434\u0430\u0432\u043D\u043E \u043D\u0435 \u0436\u0438\u0432\u0443 \u0432 \u0423\u043A\u0440\u0430\u0438\u043D\u0435. \u0421\u0435\u0433\u043E\u0434\u043D\u044F \u0447\u0435\u0440\u0435\u0437 \u0418\u043D\u0442\u0435\u0440\u043D\u0435\u0442 \u0437\u0430\u043A\u0430\u0437\u0430\u043B \u0434\u0432\u0430 \u0431\u0438\u043B\u0435\u0442\u0430 \u043D\u0430 \u043F\u043E\u0435\u0437\u0434. \u041E\u0447\u0435\u043D\u044C \u0434\u043E\u0432\u043E\u043B\u0435\u043D \u043E\u0431\u0441\u043B\u0443\u0436\u0438\u0432\u0430\u043D\u0438\u0435\u043C, \u043E\u0447\u0435\u043D\u044C \u0434\u043E\u0441\u0442\u0443\u043F\u043D\u043E, \u0431\u044B\u0441\u0442\u0440\u043E \u0438 \u043F\u0440\u043E\u0441\u0442\u043E. \u041C\u044B \u043B\u044E\u0431\u0438\u043C \u0423\u043A\u0440\u0430\u0438\u043D\u0443, \u043B\u044E\u0431\u0438\u043C \u0443\u043A\u0440\u0430\u0438\u043D\u0446\u0435\u0432 \u0438 \u0432\u0435\u0440\u0438\u043C, \u0447\u0442\u043E \u0432\u0441\u0435 \u0431\u0443\u0434\u0435\u0442 \u0445\u043E\u0440\u043E\u0448\u043E','type':{'$type':'TransportType','$name':'TRAIN'}},{'authorName':'\u041E\u043B\u0435\u0433 \u0413\u0430\u0440\u043A\u0430\u0432\u044B\u0439','id':'9e0b8390-3bb8-4986-a86b-237d909d4a30','pictureUrl':'oleg_garkavii','reviewText':'\u041F\u0440\u0438\u0434\u0431\u0430\u0432 \u043A\u0432\u0438\u0442\u043A\u0438 \u0431\u0435\u0437 \u043F\u0440\u043E\u0431\u043B\u0435\u043C','type':{'$type':'TransportType','$name':'TRAIN'}},{'authorName':'\u0410\u043D\u0434\u0440\u0435\u0439 \u041C\u0435\u043B\u0435\u0434\u0438\u043D','id':'7e0b8390-3bb8-4986-a86b-237d909d4a30','pictureUrl':'andrei_meledin','reviewText':'\u042D\u0442\u043E \u043A\u0440\u0443\u0442\u043E. \u041D\u0430 \u0420\u043E\u0436\u0434\u0435\u0441\u0442\u0432\u043E \u043D\u0435 \u043C\u043E\u0433 \u0432\u044B\u0435\u0445\u0430\u0442\u044C \u0438\u0437 \u0417\u0430\u043F\u043E\u0440\u043E\u0436\u044C\u0435. \u0422\u043E\u043B\u044C\u043A\u043E \u043F\u043E\u0434\u0432\u0435\u0441\u0438\u043B \u043E\u0436\u0438\u0434\u0430\u043D\u0438\u0435 \u043D\u0430 \u0441\u0430\u0439\u0442\u0435 \u043A\u0430\u043A \u0441\u0440\u0430\u0437\u0443 \u043E\u043A\u0430\u0437\u0430\u043B\u0441\u044F \u0431\u0438\u043B\u0435\u0442. \u0410 \u0432 \u043A\u0430\u0441\u0441\u0430\u0445 \u0432\u043E\u043A\u0437\u0430\u043B\u0430 \u043A\u0430\u043A \u0432\u0441\u0435\u0433\u0434\u0430 \u043F\u0443\u0441\u0442\u043E','type':{'$type':'TransportType','$name':'TRAIN'}},{'authorName':'\u0421\u0435\u0440\u0433\u0435\u0439 \u041F\u0435\u0442\u0440\u043E\u0432','id':'130b8390-3bb8-4986-a86b-237d909d4a30','pictureUrl':'sergei_petrov','reviewText':'\u0421\u0443\u043F\u0435\u0440! \u041A\u0443\u043F\u0438\u043B \u0431\u0438\u043B\u0435\u0442 \u0437\u0430 \u0447\u0430\u0441 \u0434\u043E \u043E\u0442\u043F\u0440\u0430\u0432\u043B\u0435\u043D\u0438\u044F \u043F\u043E\u0435\u0437\u0434\u0430, \u043F\u043E\u043A\u0430\u0437\u0430\u043B pdf, \u043A\u043E\u0442\u043E\u0440\u044B\u0439 \u043F\u0440\u0438\u0441\u043B\u0430\u043B\u0438 \u043C\u043D\u0435 \u043D\u0430 \u043F\u043E\u0447\u0442\u0443 \u0438 \u0432\u0441\u0435! \u0427\u0442\u043E \u0435\u0449\u0451 \u043D\u0443\u0436\u043D\u043E?','type':{'$type':'TransportType','$name':'TRAIN'}},{'authorName':'\u041E\u043B\u044C\u0433\u0430 \u0411\u0435\u0437\u043D\u0438\u0441\u043A\u043E','id':'140b8390-3bb8-4986-a86b-237d909d4a30','pictureUrl':'olga_beznisko','reviewText':'\u041A\u0443\u043F\u0438\u043B\u0430 \u0431\u0438\u043B\u0435\u0442\u044B \u0447\u0435\u0440\u0435\u0437 \u0441\u0430\u0439\u0442, \u0432 \u043A\u0430\u0441\u0441\u0435 \u043E\u0431\u043C\u0435\u043D\u0430 \u0441\u0434\u0435\u043B\u0430\u043B\u0438 \u0432\u0441\u0435 \u0431\u0435\u0437 \u043E\u0447\u0435\u0440\u0435\u0434\u0438... \u0412\u0441\u0435 \u043E\u0442\u043B\u0438\u0447\u043D\u043E','type':{'$type':'TransportType','$name':'TRAIN'}},{'authorName':'Alina Tkachenia','id':'100b8390-3bb8-4986-a86b-237d909d4a30','pictureUrl':'alina_tkachenia','reviewText':'\u0423\u0434\u043E\u0431\u043D\u044B\u0439 \u0441\u0435\u0440\u0432\u0438\u0441. \u041D\u0438\u0447\u0435\u0433\u043E \u043B\u0438\u0448\u043D\u0435\u0433\u043E. \u0417\u0430\u0445\u043E\u0434\u0438\u0448\u044C, \u043F\u043E\u043A\u0443\u043F\u0430\u0435\u0448\u044C \u0431\u0438\u043B\u0435\u0442 - \u0438 \u0432 \u0434\u043E\u0440\u043E\u0433\u0443)','type':{'$type':'TransportType','$name':'TRAIN'}}]};
+          Application.globals.host = 'https://de-prod-lb.cashalot.in.ua:443';
+          Application.globals.language = '';
+          Application.globals.clientIp = '178.150.98.141';
+          Application.globals.serviceEnabled = true;
+          Application.globals.serviceErrorMessage = null;
+          Application.globals.serviceStatusMessage = null;
+          Application.globals.serviceVersion = null;
+          /*]]>*/
+          (function () {
+            Application.model = Application.model || {};
+            Application.model.language = Application.globals.language;
+            var lang = Application.globals.language.replace('/', '');
+            if (lang) {
+              if (lang === 'ua') {
+                Application.globals.language = 'uk';
+              } else {
+                Application.globals.language = lang;
+              }
+            } else {
+              Application.globals.language = 'ru';
+            }
+          })();
+      
+          document.addEventListener('DOMContentLoaded', function() {
+            Application.setSearchInputs();
+            Application.setServiceMessages();
+          });
+        </script>
+      
+        
+        <script>
+            (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+                    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+                m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+            })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+            ga('create', 'UA-57473268-1', 'proizd.ua', 'train');
+            ga('train.send', 'pageview');
+            ga('train.require', 'displayfeatures');
+        </script>
+      
+        
+        <script>
+            var google_conversion_id = 958230987;
+            var google_conversion_label = "l033CLnSvFgQy-P1yAM";
+            var google_remarketing_only = true;
+        </script>
+        <script src="//www.googleadservices.com/pagead/conversion_async.js"></script>
+        <noscript>
+          &lt;div style="display:inline;"&gt;
+            &lt;img height="1" width="1" style="border-style:none;" alt="" src="//googleads.g.doubleclick.net/pagead/viewthroughconversion/958230987/?value=1.00&amp;amp;currency_code=UAH&amp;amp;label=l033CLnSvFgQy-P1yAM&amp;amp;guid=ON&amp;amp;script=0" /&gt;
+          &lt;/div&gt;
+        </noscript>
+      
+      <script src="//www.dmpcloud.net/spx/proizd.ua/spx.js?ts=1517865655520" async="true"></script><script src="https://googleads.g.doubleclick.net/pagead/viewthroughconversion/958230987/?random=1517865676566&amp;cv=8&amp;fst=1517865676566&amp;num=1&amp;label=0zYHCICx0FsQy-P1yAM&amp;guid=ON&amp;eid=376635470&amp;u_h=1050&amp;u_w=1680&amp;u_ah=1010&amp;u_aw=1680&amp;u_cd=24&amp;u_his=3&amp;u_tz=120&amp;u_java=false&amp;u_nplug=4&amp;u_nmime=5&amp;frm=0&amp;url=https%3A%2F%2Fproizd.ua%2F%3Fgclid%3DCj0KCQiAnuDTBRDUARIsAL41eDrTQb0NUFxQTn2vP-YLC8AzYkvdEs9hhW5w_OLV61xX6Kt8SBCoWK4aAkFqEALw_wcB&amp;ref=https%3A%2F%2Fwww.google.com.ua%2F&amp;tiba=%D0%96%D0%94%20%D0%B1%D0%B8%D0%BB%D0%B5%D1%82%D1%8B%20%D0%BE%D0%BD%D0%BB%D0%B0%D0%B9%D0%BD%20PROIZD%E2%84%A2%20%E2%80%93%20%D0%B1%D0%B8%D0%BB%D0%B5%D1%82%D1%8B%20%D0%BD%D0%B0%20%D0%BF%D0%BE%D0%B5%D0%B7%D0%B4%20%D0%BF%D0%BE%20%D0%A3%D0%BA%D1%80%D0%B0%D0%B8&amp;async=1&amp;rfmt=3&amp;fmt=4"></script></head>
+      <body>
+        <div class="main-container">
+          <header class="site-header-component site-component">
+        <div class="visible-space">
+          <a class="logo-link" href="/">
+            <img src="../../../../assets/images/logos/proizd-dcf411c09c.png" alt="proizd-logo">
+          </a>
+          <div class="header-menu">
+            <div class="main-links">
+              <a class="page-link opener-btn" href="/">
+                <button><i class="fa fa-train menu-icon"></i>Поезда</button>
+              </a>
+            </div>
+            <div class="modal-openers">
+              <button id="support-opener" class="opener-btn">
+                <i class="fa fa-comment-o menu-icon"></i>
+                <span class="modal-opener-text">Помощь онлайн</span>
+              </button>
+              <button id="user-entry-opener" class="opener-btn">
+                <i class="fa fa-user-o menu-icon"></i>
+                <span class="modal-opener-text">Кабинет</span>
+              </button>
+              <button id="header-language-select" style="visibility: visible;"><div class="selector-container">
+              <button class="selector-button">
+                <span class="selector-value">Рус</span>
+                <span class="selector-icon"><i class="fa fa-angle-down"></i></span>
+              </button>
+              <ul class="selector-list"><li class="selector-list-item" data-value="ua">Укр</li><li class="selector-list-item" data-value="en">Eng</li></ul>
+            </div></button>
+              <div id="user-entry-modal" class="custom-modal user-entry-modal">
+        <h2 class="user-entry-header">
+          <span>Вход<i class="fa fa-sign-in"></i></span>
+          <i class="fa fa-times close-modal-btn"></i>
+        </h2>
+        <form class="user-entry-form">
+          <p class="error-message server-error"></p>
+          <p class="error-message client-error">Введите фамилию и пароль</p>
+          <input class="text-input" type="text" name="lastName" placeholder="Фамилия пассажира (без имени)">
+          <input class="text-input" type="password" name="cardNumber" placeholder="Последние 4 цифры платёжной карты">
+          <input class="submit-btn" type="submit" value="Войти в кабинет">
+        </form>
+      </div>
+            </div>
+          </div>
+        </div>
+      </header>
+          <main class="content-container">
+            <section class="main-search-component site-component">
+        <div class="main-search-container">
+          <h1 class="main-search-title">Купить ЖД Билеты Просто</h1>
+          <!--<h3 class="main-search-message" th:utext="${serviceVersion == 'b'} ? #{index.search.message.version.b(${langUrl})} : #{index.search.message.version.a(${langUrl})}"></h3>-->
+          <div class="visible-space">
+            <div class="working-space">
+              <div class="search-messages-row">
+                <div class="geo-prompt">
+                  <span class="geo-text">
+                    <span>Отправляетесь с</span>
+                    <span class="station-name"></span>
+                  </span>
+                  <button id="geo-yes-btn" class="geo-btn">Да</button>
+                  <button id="geo-no-btn" class="geo-btn">Нет</button>
+                </div>
+                <div class="errors-container">
+        <span id="departure-station-error" class="client-error-message" style="visibility: hidden;">Введите станцию отправления</span>
+        <span id="arrival-station-error" class="client-error-message" style="visibility: hidden;">Введите станцию прибытия</span>
+        <span id="departure-date-error" class="client-error-message" style="visibility: hidden;">Выберите дату отправления</span>
+      </div>
+              </div>
+              <div class="main-search-fields">
+        <div class="search-fields-row">
+          <div class="field-container">
+            <div class="search-field">
+              <span class="search-field-title">Откуда?</span>
+              <input id="departure-input" type="text" class="search-input" tabindex="1" autocomplete="off" placeholder="Станция отправления" value="">
+              <i class="fa fa-map-marker input-icon"></i>
+            <div class="autocomplete" style="top:81px;left:0px;width:335px;"></div></div>
+          </div>
+          <button class="flip-stations-btn">
+            <i class="fa fa-long-arrow-left"></i>
+            <i class="fa fa-long-arrow-right"></i>
+          </button>
+          <div class="field-container">
+            <div class="search-field">
+              <span class="search-field-title">Куда?</span>
+              <input id="arrival-input" type="text" class="search-input" tabindex="2" autocomplete="off" placeholder="Станция прибытия" value="">
+              <i class="fa fa-map-marker input-icon"></i>
+            <div class="autocomplete" style="top:81px;left:0px;width:335px;"></div></div>
+          </div>
+          <div class="field-container">
+            <div class="calendar-field">
+              <div id="calendar-holder" class="date-input-container search-field" tabindex="3" unselectable="on">
+                <span class="search-field-title" unselectable="on">Когда?</span>
+                <input id="date-input" type="text" class="search-input" readonly="readonly" autocomplete="off" placeholder="Дата поездки" unselectable="on">
+                <i class="fa fa-calendar input-icon" unselectable="on"></i>
+              <div class="ccal undefined" unselectable="on" style="display: none;"><div class="calhead" unselectable="on"><ul class="calmonthnav" unselectable="on"><li class="calprevmonth btn-disabled" unselectable="on"><span unselectable="on"><i class="fa fa-angle-left" unselectable="on"></i></span></li><li class="calmonth" unselectable="on"><span class="month" unselectable="on">Февраль 2018</span></li><li class="calnextmonth" unselectable="on"><span unselectable="on"><i class="fa fa-angle-right" unselectable="on"></i></span></li></ul><ul class="calweekdays" unselectable="on"><li unselectable="on"><span unselectable="on">Пн</span></li><li unselectable="on"><span unselectable="on">Вт</span></li><li unselectable="on"><span unselectable="on">Ср</span></li><li unselectable="on"><span unselectable="on">Чт</span></li><li unselectable="on"><span unselectable="on">Пт</span></li><li unselectable="on"><span unselectable="on">Сб</span></li><li unselectable="on"><span unselectable="on">Вс</span></li></ul></div><div class="calbody" unselectable="on"><ul unselectable="on"><li class="calprev disabled-date" unselectable="on"><span unselectable="on">29</span></li><li class="calprev disabled-date" unselectable="on"><span unselectable="on">30</span></li><li class="calprev disabled-date" unselectable="on"><span unselectable="on">31</span></li><li class="disabled-date" unselectable="on"><span unselectable="on">1</span></li><li class="disabled-date" unselectable="on"><span unselectable="on">2</span></li><li class="weekend disabled-date" unselectable="on"><span unselectable="on">3</span></li><li class="weekend disabled-date" unselectable="on"><span unselectable="on">4</span></li></ul><ul unselectable="on"><li class="today" unselectable="on"><span unselectable="on">5</span></li><li unselectable="on" class=""><span unselectable="on">6</span></li><li unselectable="on" class=""><span unselectable="on">7</span></li><li unselectable="on" class=""><span unselectable="on">8</span></li><li unselectable="on" class=""><span unselectable="on">9</span></li><li class="weekend" unselectable="on"><span unselectable="on">10</span></li><li class="weekend" unselectable="on"><span unselectable="on">11</span></li></ul><ul unselectable="on"><li unselectable="on" class=""><span unselectable="on">12</span></li><li unselectable="on" class="selected"><span unselectable="on">13</span></li><li unselectable="on" class=""><span unselectable="on">14</span></li><li unselectable="on" class=""><span unselectable="on">15</span></li><li unselectable="on" class=""><span unselectable="on">16</span></li><li class="weekend" unselectable="on"><span unselectable="on">17</span></li><li class="weekend" unselectable="on"><span unselectable="on">18</span></li></ul><ul unselectable="on"><li unselectable="on" class=""><span unselectable="on">19</span></li><li unselectable="on" class=""><span unselectable="on">20</span></li><li unselectable="on" class=""><span unselectable="on">21</span></li><li unselectable="on" class=""><span unselectable="on">22</span></li><li unselectable="on" class=""><span unselectable="on">23</span></li><li class="weekend" unselectable="on"><span unselectable="on">24</span></li><li class="weekend" unselectable="on"><span unselectable="on">25</span></li></ul><ul unselectable="on"><li unselectable="on" class=""><span unselectable="on">26</span></li><li unselectable="on" class=""><span unselectable="on">27</span></li><li unselectable="on" class=""><span unselectable="on">28</span></li><li class="calprev" unselectable="on"><span unselectable="on">1</span></li><li class="calprev" unselectable="on"><span unselectable="on">2</span></li><li class="calprev weekend" unselectable="on"><span unselectable="on">3</span></li><li class="calprev weekend" unselectable="on"><span unselectable="on">4</span></li></ul><ul unselectable="on"><li class="calnext" unselectable="on"><span unselectable="on">5</span></li><li class="calnext" unselectable="on"><span unselectable="on">6</span></li><li class="calnext" unselectable="on"><span unselectable="on">7</span></li><li class="calnext" unselectable="on"><span unselectable="on">8</span></li><li class="calnext" unselectable="on"><span unselectable="on">9</span></li><li class="calnext weekend" unselectable="on"><span unselectable="on">10</span></li><li class="calnext weekend" unselectable="on"><span unselectable="on">11</span></li></ul></div></div></div>
+            </div>
+          </div>
+        </div>
+        <div class="search-button-row">
+          <button id="main-search-btn" class="action-btn">
+            <span class="search-btn-text">Найти билет</span><i class="fa fa-long-arrow-right"></i>
+            <div class="preloader">
+        <div class="preloader-blob loader-blob-1"></div>
+        <div class="preloader-blob loader-blob-2"></div>
+        <div class="preloader-blob loader-blob-3"></div>
+        <div class="preloader-blob loader-blob-4"></div>
+      </div>
+          </button>
+        </div>
+      </div>
+            </div>
+          </div>
+          <div class="error-message-visible">
+        <div class="error-message-working">
+          <div class="error-message tech-error-message">
+            <p class="tech-error-message-text"></p>
+      
+            <div class="main-nearest-container">
+              <div class="main-nearest-title">Пожалуйста, попробуйте поиск по соседним датам:</div>
+              <div class="main-nearest-boxes">
+                <div class="main-nearest-box">
+                  <div class="main-nearest-date"></div>
+                  <div class="main-nearest-trains">
+                    <span>Поездов</span>:
+                    <span class="number"></span>
+                  </div>
+                  <div class="main-nearest-preloader">
+                    <div class="preloader">
+        <div class="preloader-blob loader-blob-1"></div>
+        <div class="preloader-blob loader-blob-2"></div>
+        <div class="preloader-blob loader-blob-3"></div>
+        <div class="preloader-blob loader-blob-4"></div>
+      </div>
+                  </div>
+                  <div class="main-nearest-error">Нет поездов</div>
+                </div>
+                <div class="main-nearest-box">
+                  <div class="main-nearest-date"></div>
+                  <div class="main-nearest-trains">
+                    <span>Поездов</span>:
+                    <span class="number"></span>
+                  </div>
+                  <div class="main-nearest-preloader">
+                    <div class="preloader">
+        <div class="preloader-blob loader-blob-1"></div>
+        <div class="preloader-blob loader-blob-2"></div>
+        <div class="preloader-blob loader-blob-3"></div>
+        <div class="preloader-blob loader-blob-4"></div>
+      </div>
+                  </div>
+                  <div class="main-nearest-error">Нет поездов</div>
+                </div>
+                <div class="main-nearest-box">
+                  <div class="main-nearest-date"></div>
+                  <div class="main-nearest-trains">
+                    <span>Поездов</span>:
+                    <span class="number"></span>
+                  </div>
+                  <div class="main-nearest-preloader">
+                    <div class="preloader">
+        <div class="preloader-blob loader-blob-1"></div>
+        <div class="preloader-blob loader-blob-2"></div>
+        <div class="preloader-blob loader-blob-3"></div>
+        <div class="preloader-blob loader-blob-4"></div>
+      </div>
+                  </div>
+                  <div class="main-nearest-error">Нет поездов</div>
+                </div>
+                <div class="main-nearest-box">
+                  <div class="main-nearest-date"></div>
+                  <div class="main-nearest-trains">
+                    <span>Поездов</span>:
+                    <span class="number"></span>
+                  </div>
+                  <div class="main-nearest-preloader">
+                    <div class="preloader">
+        <div class="preloader-blob loader-blob-1"></div>
+        <div class="preloader-blob loader-blob-2"></div>
+        <div class="preloader-blob loader-blob-3"></div>
+        <div class="preloader-blob loader-blob-4"></div>
+      </div>
+                  </div>
+                  <div class="main-nearest-error">Нет поездов</div>
+                </div>
+                <div class="main-nearest-box">
+                  <div class="main-nearest-date"></div>
+                  <div class="main-nearest-trains">
+                    <span>Поездов</span>:
+                    <span class="number"></span>
+                  </div>
+                  <div class="main-nearest-preloader">
+                    <div class="preloader">
+        <div class="preloader-blob loader-blob-1"></div>
+        <div class="preloader-blob loader-blob-2"></div>
+        <div class="preloader-blob loader-blob-3"></div>
+        <div class="preloader-blob loader-blob-4"></div>
+      </div>
+                  </div>
+                  <div class="main-nearest-error">Нет поездов</div>
+                </div>
+              </div>
+      
+            </div>
+          </div>
+      
+          <p class="error-message no-connection-error-message">Нет подключения к Интернету</p>
+        </div>
+      </div>
+        </div>
+        <div class="tree-left"></div>
+        <div class="train-animated"></div>
+        <div class="tree-right"></div>
+      </section>
+            <app-main-search ng-version="4.4.6"><section class="search-tabs-component"> <!----> <!----><actual-trips><div class="actual-trips-component"> <!----><section class="main-search-result-component"> <div class="visible-space"> <div class="working-space"> <div class="trips-wrapper"> <header class="trips-info-header"> <div class="direction-details"> <h3 class="direction-name"> <span class="departure-name">Харьков-Пасс</span> <!----><span class="departure-weather"> <span class="departure-temperature">+0°</span> <img alt="" src="./assets/images/weather/snow-d247d91706.png"> </span> <span class="direction-arrow">→</span> <span class="arrival-name">Львов</span> <!----><span class="arrival-weather"> <span class="departure-temperature">+1°</span> <img alt="" src="./assets/images/weather/snow-d247d91706.png"> </span> </h3> <div class="date-dropdown" dropdown=""> <button class="date-dropdown-btn" dropdown-open=""> <span class="nearest-dates-title">Соседние даты:</span> <i class="fa fa-calendar"></i> <span class="date-value">13 февраля</span> <i class="fa fa-angle-down"></i> </button> <!----> </div> </div> <!----><div class="trips-info-container"> <div class="trips-counter"> <span class="trips-number">Результаты: 3</span> </div> <!----> <div class="trips-sorting" dropdown=""> <div class="trips-sorting-header" dropdown-open=""> <span class="trips-sorting-text">Сортировать:</span> <button class="trips-sorting-btn" type="button"> <!----><!----><!----><!---->по времени отправления<!----><!----><!----> <i class="fa fa-angle-down"></i> </button> </div> <!----> </div> </div> </header> </div> </div> </div> </section> <div class="main-search-error-container"> <div class="visible-space"> <div class="working-space"> <!----> <!----> </div> </div> </div> <main class="trips-content-main"> <!----><trip class="trip-content-container"><section class="trip-component"> <div class="visible-space"> <div class="working-space"> <div class="trip-card"> <!----><div class="trip-leg"> <div class="trip-info"> <div class="top-wrapper"> <h3 class="transport-name">  <a href="/train/017О"> 017О Харьков-Пасс — Ужгород </a></h3> <div class="transport-properties"> <p>  Скорый Дизельный </p> <p> Фирменный </p> </div> <!----><div> <img class="transport-image" src="../../../../../assets/images/trip/DIESEL.png" alt="DIESEL"> </div> <!----><div class="code-container"> <i class="fa code-icon fa-qrcode"></i> <!----><!----> <!----><div class="code-title"> <!---->Электронный билет <div class="tooltip"> <h4 class="tooltip-title">Электронный билет</h4> <p class="tooltip-text">Это документ, который не нужно обменивать в кассе. С ним Вы можете подойти прямо к своему поезду для посадки</p> </div> </div> <!---->  <!----> </div> </div> <!----><div class="bottom-wrapper"> <!----><div class="popularity-wrapper"> <p class="popularity-title">Популярность</p> <div class="popularity-stars"> <!----><span class="fa fa-stack"> <i class="fa fa-star popular"></i> <!----> </span><span class="fa fa-stack"> <i class="fa fa-star popular"></i> <!----> </span><span class="fa fa-stack"> <i class="fa fa-star popular"></i> <!----> </span><span class="fa fa-stack"> <i class="fa fa-star"></i> <!----><i class="fa fa-star half-popular"></i> </span><span class="fa fa-stack"> <i class="fa fa-star"></i> <!----><i class="fa fa-star half-popular"></i> </span> </div> <p class="popularity-value">3.24</p> </div> <div class="itinerary-btn-wrapper"> <!----><button class="toggle-route-btn"> <!----><!---->Маршрут поезда <!----> </button> </div> </div> </div> <div class="trip-details"> <div class="top-wrapper"> <div class="trip-duration-info"> <div class="departure-time-wrapper"> <p class="time-value">15:12</p> <p class="weekday-value">Вторник</p> <p class="date-value">13 февраля</p> </div> <div class="duration-wrapper"> <p class="time-value">13:36</p> <div class="duration-arrow"></div> <p class="duration-description">время в пути</p> </div> <div class="arrival-time-wrapper"> <p class="time-value">04:48</p> <p class="weekday-value">Среда</p> <p class="date-value">14 февраля</p> </div> </div> <h3 class="trip-stations"> <div class="departure-station"> <div class="departure-station-name">Харьков-Пасс</div> <div class="departure-station-address"></div> </div> <div class="arrival-station"> <div class="arrival-station-name">Львов</div> <div class="arrival-station-address"></div> </div> </h3> </div> <!----><div class="bottom-wrapper"> <!----><div class="transport-type-info"> <div class="wagon-features-container"> <span class="wagon-type">Люкс:</span> <!----><!----> <!----><span class="wagon-class">Стандартный<!----><!---->,</span> <span class="free-seats"> <!----> 7 <!----><!----><!----><!----><!----><!----><!---->мест  <!----> </span>  </div> <!----> <div class="wagon-info-container"> <!----><span class="ticket-price"> <!----> <span class="price-value"> 1513.07 </span>  <!----> <span class="price-currency">ГРН</span> </span> <!----> <button class="select-type-btn"> <!----> <!---->Выбрать <!----> <i class="fa fa-angle-right"></i>  <!----> </button> </div> </div> </div> <!----> </div> <!----> </div> </div> </div> </div> </section> <!----></trip><trip class="trip-content-container"><section class="trip-component"> <div class="visible-space"> <div class="working-space"> <div class="trip-card"> <!----><div class="trip-leg"> <div class="trip-info"> <div class="top-wrapper"> <h3 class="transport-name"> <a href="/train/131О"> 131О Харьков-Пасс — Львов </a> </h3> <div class="transport-properties"> <p>  Скорый Дизельный </p> <p> Фирменный </p> </div> <!----><div> <img class="transport-image" src="../../../../../assets/images/trip/DIESEL.png" alt="DIESEL"> </div> <!----><div class="code-container"> <i class="fa code-icon fa-qrcode"></i> <!----><!----> <!----><div class="code-title"> <!---->Электронный билет <div class="tooltip"> <h4 class="tooltip-title">Электронный билет</h4> <p class="tooltip-text">Это документ, который не нужно обменивать в кассе. С ним Вы можете подойти прямо к своему поезду для посадки</p> </div> </div> <!---->  <!----> </div> </div> <!----><div class="bottom-wrapper"> <!----><div class="popularity-wrapper"> <p class="popularity-title">Популярность</p> <div class="popularity-stars"> <!----><span class="fa fa-stack"> <i class="fa fa-star popular"></i> <!----> </span><span class="fa fa-stack"> <i class="fa fa-star popular"></i> <!----> </span><span class="fa fa-stack"> <i class="fa fa-star popular"></i> <!----> </span><span class="fa fa-stack"> <i class="fa fa-star popular"></i> <!----> </span><span class="fa fa-stack"> <i class="fa fa-star popular"></i> <!----><i class="fa fa-star half-popular"></i> </span> </div> <p class="popularity-value">4.33</p> </div> <div class="itinerary-btn-wrapper"> <!----><button class="toggle-route-btn"> <!----><!---->Маршрут поезда <!----> </button> </div> </div> </div> <div class="trip-details"> <div class="top-wrapper"> <div class="trip-duration-info"> <div class="departure-time-wrapper"> <p class="time-value">20:09</p> <p class="weekday-value">Вторник</p> <p class="date-value">13 февраля</p> </div> <div class="duration-wrapper"> <p class="time-value">19:06</p> <div class="duration-arrow"></div> <p class="duration-description">время в пути</p> </div> <div class="arrival-time-wrapper"> <p class="time-value">15:15</p> <p class="weekday-value">Среда</p> <p class="date-value">14 февраля</p> </div> </div> <h3 class="trip-stations"> <div class="departure-station"> <div class="departure-station-name">Харьков-Пасс</div> <div class="departure-station-address"></div> </div> <div class="arrival-station"> <div class="arrival-station-name">Львов</div> <div class="arrival-station-address"></div> </div> </h3> </div> <!----><div class="bottom-wrapper"> <!----><div class="transport-type-info"> <div class="wagon-features-container"> <span class="wagon-type">Люкс:</span> <!----><!----> <!----><span class="wagon-class">Стандартный<!----><!---->,</span> <span class="free-seats"> <!----> 20 <!----><!----><!----><!----><!----><!----><!---->мест  <!----> </span>  </div> <!----> <div class="wagon-info-container"> <!----><span class="ticket-price"> <!----> <span class="price-value"> 807.23 </span>  <!----> <span class="price-currency">ГРН</span> </span> <!----> <button class="select-type-btn"> <!----> <!---->Выбрать <!----> <i class="fa fa-angle-right"></i>  <!----> </button> </div> </div><div class="transport-type-info"> <div class="wagon-features-container"> <span class="wagon-type">Купе:</span> <!----><!----> <!----><span class="wagon-class">Стандартный<!----><!---->,</span> <span class="free-seats"> <!----> 18 <!----><!----><!----><!----><!----><!----><!---->мест  <!----> </span>  </div> <!----> <div class="wagon-info-container"> <!----><span class="ticket-price"> <!----> <span class="price-value"> 334.45 </span>  <!----> <span class="price-currency">ГРН</span> </span> <!----> <button class="select-type-btn"> <!----> <!---->Выбрать <!----> <i class="fa fa-angle-right"></i>  <!----> </button> </div> </div><div class="transport-type-info"> <div class="wagon-features-container"> <span class="wagon-type">Плацкартный:</span> <!----><!----> <!----><span class="wagon-class">Стандартный<!----><!---->,</span> <span class="free-seats"> <!----> 35 <!----><!----><!----><!----><!----><!----><!---->мест  <!----> </span>  </div> <!----> <div class="wagon-info-container"> <!----><span class="ticket-price"> <!----> <span class="price-value"> 183.35 </span>  <!----> <span class="price-currency">ГРН</span> </span> <!----> <button class="select-type-btn"> <!----> <!---->Выбрать <!----> <i class="fa fa-angle-right"></i>  <!----> </button> </div> </div> </div> <!----> </div> <!----> </div> </div> </div> </div> </section> <!----></trip><trip class="trip-content-container"><section class="trip-component"> <div class="visible-space"> <div class="working-space"> <div class="trip-card"> <!----><div class="trip-leg"> <div class="trip-info"> <div class="top-wrapper"> <h3 class="transport-name"> <a href="/train/002Д"> 002Д Константиновка — Ивано-Франковск </a> </h3> <div class="transport-properties"> <p>  Скорый Дизельный </p> <p> Фирменный </p> </div> <!----><div> <img class="transport-image" src="../../../../../assets/images/trip/DIESEL.png" alt="DIESEL"> </div> <!----><div class="code-container"> <i class="fa code-icon fa-qrcode"></i> <!----><!----> <!----><div class="code-title"> <!---->Электронный билет <div class="tooltip"> <h4 class="tooltip-title">Электронный билет</h4> <p class="tooltip-text">Это документ, который не нужно обменивать в кассе. С ним Вы можете подойти прямо к своему поезду для посадки</p> </div> </div> <!---->  <!----> </div> </div> <!----><div class="bottom-wrapper"> <!----><div class="popularity-wrapper"> <p class="popularity-title">Популярность</p> <div class="popularity-stars"> <!----><span class="fa fa-stack"> <i class="fa fa-star popular"></i> <!----> </span><span class="fa fa-stack"> <i class="fa fa-star popular"></i> <!----> </span><span class="fa fa-stack"> <i class="fa fa-star popular"></i> <!----> </span><span class="fa fa-stack"> <i class="fa fa-star popular"></i> <!----><i class="fa fa-star half-popular"></i> </span><span class="fa fa-stack"> <i class="fa fa-star"></i> <!----><i class="fa fa-star half-popular"></i> </span> </div> <p class="popularity-value">3.27</p> </div> <div class="itinerary-btn-wrapper"> <!----><button class="toggle-route-btn"> <!----><!---->Маршрут поезда <!----> </button> </div> </div> </div> <div class="trip-details"> <div class="top-wrapper"> <div class="trip-duration-info"> <div class="departure-time-wrapper"> <p class="time-value">21:22</p> <p class="weekday-value">Вторник</p> <p class="date-value">13 февраля</p> </div> <div class="duration-wrapper"> <p class="time-value">13:00</p> <div class="duration-arrow"></div> <p class="duration-description">время в пути</p> </div> <div class="arrival-time-wrapper"> <p class="time-value">10:22</p> <p class="weekday-value">Среда</p> <p class="date-value">14 февраля</p> </div> </div> <h3 class="trip-stations"> <div class="departure-station"> <div class="departure-station-name">Харьков-Пасс</div> <div class="departure-station-address"></div> </div> <div class="arrival-station"> <div class="arrival-station-name">Львов</div> <div class="arrival-station-address"></div> </div> </h3> </div> <!----><div class="bottom-wrapper"> <!----><div class="transport-type-info"> <div class="wagon-features-container"> <span class="wagon-type">Люкс:</span> <!----><!----> <!----><span class="wagon-class">Стандартный<!----><!---->,</span> <span class="free-seats"> <!----> 7 <!----><!----><!----><!----><!----><!----><!---->мест  <!----> </span>  </div> <!----> <div class="wagon-info-container"> <!----><span class="ticket-price"> <!----> <span class="price-value"> 1513.07 </span>  <!----> <span class="price-currency">ГРН</span> </span> <!----> <button class="select-type-btn"> <!----> <!---->Выбрать <!----> <i class="fa fa-angle-right"></i>  <!----> </button> </div> </div><div class="transport-type-info"> <div class="wagon-features-container"> <span class="wagon-type">Купе:</span> <!----><!----> <!----><span class="wagon-class">Стандартный<!----><!---->,</span> <span class="free-seats"> <!----> 11 <!----><!----><!----><!----><!----><!----><!---->мест  <!----> </span>  </div> <!----> <div class="wagon-info-container"> <!----><span class="ticket-price"> <!----> <span class="price-value"> 601.92 </span>  <!----> <span class="price-currency">ГРН</span> </span> <!----> <button class="select-type-btn"> <!----> <!---->Выбрать <!----> <i class="fa fa-angle-right"></i>  <!----> </button> </div> </div> </div> <!----> </div> <!----> </div> </div> </div> </div> </section> <!----></trip> </main> <!----><section class="hope-toggle"> <div class="visible-space"> <div class="working-space"> <div class="component-title">Не можете найти подходящий вариант?</div> <div class="hope-toggle-container"> <div class="hope-toggle-img-container"> <img alt="" class="hope-toggle-img" src="/assets/images/main-search/hope-toggle-60d7d0abf8.png"> </div> <div class="hope-toggle-content"> <div class="hope-toggle-title">Сервис «Есть Надежда»</div> <div class="hope-toggle-description">Вы можете оставить заявку, и мы сами зарезервируем для Вас места, как только они появятся</div> <button class="hope-toggle-btn action-btn">Оставить заявку</button> </div> </div> </div> </div> </section> <!----> <div class="actual-trips-preloader"> <!----> </div> </div></actual-trips> </section></app-main-search>
+            <section class="sold-tickets-component site-component">
+        <div class="visible-space">
+          <div class="working-space">
+            <div class="ticket-counter">
+              <h2 class="counter-title component-title">Уже куплено билетов <br> с помощью нашего сервиса</h2>
+              <div class="counter-cards-container">
+                <div class="counter-card">
+                  <span class="counter-number">5</span>
+                </div>
+              <div class="counter-card">
+                  <span class="counter-number">6</span>
+                </div><div class="counter-card">
+                  <span class="counter-number">8</span>
+                </div><div class="counter-card">
+                  <span class="counter-number">0</span>
+                </div><div class="counter-card">
+                  <span class="counter-number">0</span>
+                </div><div class="counter-card">
+                  <span class="counter-number">1</span>
+                </div></div>
+            </div>
+            <div class="last-purchased-tickets">
+              <h2 class="last-tickets-title component-title">Последние покупки</h2>
+              <div class="last-tickets-container">
+                <div class="last-ticket">
+                  <div class="last-ticket-data">
+                    <a href="/from/2200001/to/2208001">Киев → Одесса</a>
+                    <span>(378,70 грн)</span>
+                  </div>
+                  <span class="purchase-time-ago seconds-ago">секунд</span>
+                  <span class="purchase-time-ago minutes-ago" style="display: block;">1 минуту</span>
+                  <span class="purchase-time-ago hours-ago">часов</span>
+                </div>
+                <div class="last-ticket">
+                  <div class="last-ticket-data">
+                    <a href="/from/2210900/to/2200001">Кривой Рог → Киев</a>
+                    <span>(153,81 грн)</span>
+                  </div>
+                  <span class="purchase-time-ago seconds-ago">секунд</span>
+                  <span class="purchase-time-ago minutes-ago" style="display: block;">2 минуты</span>
+                  <span class="purchase-time-ago hours-ago">часов</span>
+                </div>
+                <div class="last-ticket">
+                  <div class="last-ticket-data">
+                    <a href="/from/2200001/to/2218400">Киев → Ровно</a>
+                    <span>(80,60 грн)</span>
+                  </div>
+                  <span class="purchase-time-ago seconds-ago">секунд</span>
+                  <span class="purchase-time-ago minutes-ago" style="display: block;">3 минуты</span>
+                  <span class="purchase-time-ago hours-ago">часов</span>
+                </div>
+                <div class="last-ticket">
+                  <div class="last-ticket-data">
+                    <a href="/from/2208001/to/2218400">Одесса → Ровно</a>
+                    <span>(216,79 грн)</span>
+                  </div>
+                  <span class="purchase-time-ago seconds-ago">секунд</span>
+                  <span class="purchase-time-ago minutes-ago" style="display: block;">9 минут</span>
+                  <span class="purchase-time-ago hours-ago">часов</span>
+                </div>
+                <div class="last-ticket">
+                  <div class="last-ticket-data">
+                    <a href="/from/2208001/to/2218400">Одесса → Ровно</a>
+                    <span>(216,79 грн)</span>
+                  </div>
+                  <span class="purchase-time-ago seconds-ago">секунд</span>
+                  <span class="purchase-time-ago minutes-ago" style="display: block;">9 минут</span>
+                  <span class="purchase-time-ago hours-ago">часов</span>
+                </div>
+                <div class="last-ticket">
+                  <div class="last-ticket-data">
+                    <a href="/from/2200001/to/2200242">Киев → Гнивань</a>
+                    <span>(116,80 грн)</span>
+                  </div>
+                  <span class="purchase-time-ago seconds-ago">секунд</span>
+                  <span class="purchase-time-ago minutes-ago" style="display: block;">10 минут</span>
+                  <span class="purchase-time-ago hours-ago">часов</span>
+                </div>
+                <div class="last-ticket">
+                  <div class="last-ticket-data">
+                    <a href="/from/2218255/to/2200300">Яремче → Хмельницкий</a>
+                    <span>(276,51 грн)</span>
+                  </div>
+                  <span class="purchase-time-ago seconds-ago">секунд</span>
+                  <span class="purchase-time-ago minutes-ago" style="display: block;">10 минут</span>
+                  <span class="purchase-time-ago hours-ago">часов</span>
+                </div>
+                <div class="last-ticket">
+                  <div class="last-ticket-data">
+                    <a href="/from/2200001/to/2200300">Киев → Хмельницкий</a>
+                    <span>(201,83 грн)</span>
+                  </div>
+                  <span class="purchase-time-ago seconds-ago">секунд</span>
+                  <span class="purchase-time-ago minutes-ago" style="display: block;">14 минут</span>
+                  <span class="purchase-time-ago hours-ago">часов</span>
+                </div>
+                <div class="last-ticket">
+                  <div class="last-ticket-data">
+                    <a href="/from/2210800/to/2210900">Запорожье 1 → Кривой Рог</a>
+                    <span>(45,53 грн)</span>
+                  </div>
+                  <span class="purchase-time-ago seconds-ago">секунд</span>
+                  <span class="purchase-time-ago minutes-ago" style="display: block;">14 минут</span>
+                  <span class="purchase-time-ago hours-ago">часов</span>
+                </div>
+                <div class="last-ticket">
+                  <div class="last-ticket-data">
+                    <a href="/from/2218270/to/2200001">Рахов → Киев</a>
+                    <span>(179,43 грн)</span>
+                  </div>
+                  <span class="purchase-time-ago seconds-ago">секунд</span>
+                  <span class="purchase-time-ago minutes-ago" style="display: block;">17 минут</span>
+                  <span class="purchase-time-ago hours-ago">часов</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+            <section class="benefits-component site-component">
+        <div class="visible-space">
+          <div class="working-space">
+            <h2 class="component-title">Почему стоит покупать билеты у нас?</h2>
+            <div class="benefits">
+              <div class="benefit-item">
+                <div class="benefit-icon-container">
+                  <img class="benefit-icon" alt="" src="../../../../assets/images/benefits/idea-bf013a96b2.png">
+                </div>
+                <h3 class="benefit-title">Простота</h3>
+                <p class="benefit-text">Никаких лишних действий - нам важно сохранить Ваше время</p>
+              </div>
+              <div class="benefit-item">
+                <div class="benefit-icon-container">
+                  <img class="benefit-icon" alt="" src="../../../../assets/images/benefits/target-dadceda010.png">
+                </div>
+                <h3 class="benefit-title">Надёжность</h3>
+                <p class="benefit-text">Покупать билеты у нас не менее надёжно, чем в кассе</p>
+              </div>
+              <div class="benefit-item">
+                <div class="benefit-icon-container">
+                  <img class="benefit-icon" alt="" src="../../../../assets/images/benefits/users-c7c8d519f2.png">
+                </div>
+                <h3 class="benefit-title">Поддержка</h3>
+                <p class="benefit-text">Служба поддержки ответит на все Ваши вопросы в любое время</p>
+              </div>
+            </div>
+            <div class="benefits-video-container">
+              <div class="benefits-video-title">Как покупать билеты</div>
+              <video class="benefits-video" src="../../../../assets/videos/PROIZD-c5086b062f.mp4" preload="none"></video>
+            </div>
+          </div>
+        </div>
+      </section>
+            <section class="popular-directions-component site-component">
+        <div class="visible-space">
+          <h2 class="component-title">Популярные направления</h2>
+          <div class="location-toggle">
+            <input id="native-directions" class="directions-radio" type="radio" name="directions-location" checked="checked">
+            <label for="native-directions" class="location-name">По Украине</label>
+      
+            <input id="foreign-directions" class="directions-radio" type="radio" name="directions-location">
+            <label for="foreign-directions" class="location-name">За границу</label>
+          </div>
+          <section class="direction-cards-component">
+        <div class="directions-container visible">
+          <div class="direction-card">
+            <a class="direction-link" href="/from/2200001/to/2218000">
+                  <span class="direction-info">
+                    <span class="direction-value">Киев <i class="fa fa-long-arrow-right"></i> Львов</span>
+                    <span class="direction-additional-info">от 14,67 UAH</span>
+                  </span>
+              <img class="direction-image" src="../../../../assets/images/cities/2218000.jpg" alt="Львов">
+            </a>
+          </div>
+          <div class="direction-card">
+            <a class="direction-link" href="/from/2218000/to/2218095">
+                  <span class="direction-info">
+                    <span class="direction-value">Львов <i class="fa fa-long-arrow-right"></i> Ужгород</span>
+                    <span class="direction-additional-info">от 26,31 UAH</span>
+                  </span>
+              <img class="direction-image" src="../../../../assets/images/cities/2218095.jpg" alt="Ужгород">
+            </a>
+          </div>
+          <div class="direction-card">
+            <a class="direction-link" href="/from/2200001/to/2208001">
+                  <span class="direction-info">
+                    <span class="direction-value">Киев <i class="fa fa-long-arrow-right"></i> Одесса</span>
+                    <span class="direction-additional-info">от 72,83 UAH</span>
+                  </span>
+              <img class="direction-image" src="../../../../assets/images/cities/2208001.jpg" alt="Одесса">
+            </a>
+          </div>
+          <div class="direction-card">
+            <a class="direction-link" href="/from/2208001/to/2218000">
+                  <span class="direction-info">
+                    <span class="direction-value">Одесса <i class="fa fa-long-arrow-right"></i> Львов</span>
+                    <span class="direction-additional-info">от 107,15 UAH</span>
+                  </span>
+              <img class="direction-image" src="../../../../assets/images/cities/2218000.jpg" alt="Львов">
+            </a>
+          </div>
+          
+        </div>
+      
+        <div class="directions-container">
+          <div class="direction-card">
+            <a class="direction-link" href="/from/2204001/to/2100001">
+                  <span class="direction-info">
+                    <span class="direction-value">Харьков <i class="fa fa-long-arrow-right"></i> Минск</span>
+                    <span class="direction-additional-info">от 997 UAH</span>
+                  </span>
+              <img class="direction-image" src="../../../../assets/images/cities/2100001.jpg" alt="Минск">
+            </a>
+          </div>
+          <div class="direction-card">
+            <a class="direction-link" href="/from/2218000/to/2000007">
+                  <span class="direction-info">
+                    <span class="direction-value">Львов <i class="fa fa-long-arrow-right"></i> Москва Киевская</span>
+                    <span class="direction-additional-info">от 1&nbsp;776 UAH</span>
+                  </span>
+              <img class="direction-image" src="../../../../assets/images/cities/2000007.jpg" alt="Москва Киевская">
+            </a>
+          </div>
+          <div class="direction-card">
+            <a class="direction-link" href="/from/2208001/to/2000007">
+                  <span class="direction-info">
+                    <span class="direction-value">Одесса <i class="fa fa-long-arrow-right"></i> Москва Киевская</span>
+                    <span class="direction-additional-info">от 1&nbsp;863 UAH</span>
+                  </span>
+              <img class="direction-image" src="../../../../assets/images/cities/2000007.jpg" alt="Москва Киевская">
+            </a>
+          </div>
+          <div class="direction-card">
+            <a class="direction-link" href="/from/2200001/to/2000007">
+                  <span class="direction-info">
+                    <span class="direction-value">Киев <i class="fa fa-long-arrow-right"></i> Москва Киевская</span>
+                    <span class="direction-additional-info">от 1&nbsp;276 UAH</span>
+                  </span>
+              <img class="direction-image" src="../../../../assets/images/cities/2000007.jpg" alt="Москва Киевская">
+            </a>
+          </div>
+          
+        </div>
+      </section>
+        </div>
+      </section>
+            <section class="reviews-component site-component">
+        <div class="visible-space">
+          <h2 class="component-title">Отзывы наших клиентов</h2>
+          <h3 class="reviews-subtitle">98% пользователей довольны нашим сервисом</h3>
+          <div class="reviews-container">
+            <i class="reviews-control left fa fa-angle-left"></i>
+            <div class="review visible">
+              <i class="fa fa-quote-left"></i>
+              <img alt="reviewer" class="reviewer-photo" src="assets/images/people/natali_zyrba.png">
+              <p class="reviewer-text">Очень удобный сайт для покупок билетов, спасибо!</p>
+              <p class="reviewer-name">Натали Журба</p>
+              <img src="../../../../assets/images/logos/fb-a6450bf5ad.svg" alt="facebook" class="reviewer-social-icon">
+            </div>
+            <div class="review visible">
+              <i class="fa fa-quote-left"></i>
+              <img alt="reviewer" class="reviewer-photo" src="assets/images/people/tatiana_slepchenko.png">
+              <p class="reviewer-text">Купила билет через этот сайт, на телефон пришло смс (принтера у меня нет) и без проблем, и быстро забрала билеты в кассе. Спасибо.</p>
+              <p class="reviewer-name">Татьяна Слепченко</p>
+              <img src="../../../../assets/images/logos/fb-a6450bf5ad.svg" alt="facebook" class="reviewer-social-icon">
+            </div>
+            <div class="review visible">
+              <i class="fa fa-quote-left"></i>
+              <img alt="reviewer" class="reviewer-photo" src="assets/images/people/tania_radost.png">
+              <p class="reviewer-text">Не сталкивалась я с проблемами, что касается онлайн покупки билетов. Все супер! Просто нужно быть внимательным и читать всю информацию. Там все пишется и объясняется.</p>
+              <p class="reviewer-name">Таня Радость</p>
+              <img src="../../../../assets/images/logos/fb-a6450bf5ad.svg" alt="facebook" class="reviewer-social-icon">
+            </div>
+            <div class="review">
+              <i class="fa fa-quote-left"></i>
+              <img alt="reviewer" class="reviewer-photo" src="assets/images/people/tania_radost.png">
+              <p class="reviewer-text">Не сталкивалась я с проблемами, что касается онлайн покупки билетов. Все супер! Просто нужно быть внимательным и читать всю информацию. Там все пишется и объясняется.</p>
+              <p class="reviewer-name">Таня Радость</p>
+              <img src="../../../../assets/images/logos/fb-a6450bf5ad.svg" alt="facebook" class="reviewer-social-icon">
+            </div>
+            <div class="review">
+              <i class="fa fa-quote-left"></i>
+              <img alt="reviewer" class="reviewer-photo" src="assets/images/people/leon_dorfman.png">
+              <p class="reviewer-text">А вот я уже очень давно не живу в Украине. Сегодня через Интернет заказал два билета на поезд. Очень доволен обслуживанием, очень доступно, быстро и просто. Мы любим Украину, любим украинцев и верим, что все будет хорошо</p>
+              <p class="reviewer-name">Leon Dorfman</p>
+              <img src="../../../../assets/images/logos/fb-a6450bf5ad.svg" alt="facebook" class="reviewer-social-icon">
+            </div>
+            <div class="review">
+              <i class="fa fa-quote-left"></i>
+              <img alt="reviewer" class="reviewer-photo" src="assets/images/people/oleg_garkavii.png">
+              <p class="reviewer-text">Придбав квитки без проблем</p>
+              <p class="reviewer-name">Олег Гаркавый</p>
+              <img src="../../../../assets/images/logos/fb-a6450bf5ad.svg" alt="facebook" class="reviewer-social-icon">
+            </div>
+            <div class="review">
+              <i class="fa fa-quote-left"></i>
+              <img alt="reviewer" class="reviewer-photo" src="assets/images/people/andrei_meledin.png">
+              <p class="reviewer-text">Это круто. На Рождество не мог выехать из Запорожье. Только подвесил ожидание на сайте как сразу оказался билет. А в кассах вокзала как всегда пусто</p>
+              <p class="reviewer-name">Андрей Меледин</p>
+              <img src="../../../../assets/images/logos/fb-a6450bf5ad.svg" alt="facebook" class="reviewer-social-icon">
+            </div>
+            <div class="review">
+              <i class="fa fa-quote-left"></i>
+              <img alt="reviewer" class="reviewer-photo" src="assets/images/people/sergei_petrov.png">
+              <p class="reviewer-text">Супер! Купил билет за час до отправления поезда, показал pdf, который прислали мне на почту и все! Что ещё нужно?</p>
+              <p class="reviewer-name">Сергей Петров</p>
+              <img src="../../../../assets/images/logos/fb-a6450bf5ad.svg" alt="facebook" class="reviewer-social-icon">
+            </div>
+            <div class="review">
+              <i class="fa fa-quote-left"></i>
+              <img alt="reviewer" class="reviewer-photo" src="assets/images/people/olga_beznisko.png">
+              <p class="reviewer-text">Купила билеты через сайт, в кассе обмена сделали все без очереди... Все отлично</p>
+              <p class="reviewer-name">Ольга Безниско</p>
+              <img src="../../../../assets/images/logos/fb-a6450bf5ad.svg" alt="facebook" class="reviewer-social-icon">
+            </div>
+            
+            <i class="reviews-control right fa fa-angle-right"></i>
+          </div>
+        </div>
+      </section>
+            <section class="faq-component site-component">
+        <div class="visible-space">
+          <div class="working-space">
+            <h2 class="component-title">Справка</h2>
+            <div class="faq-content-wrapper">
+              <div class="faq-toggle-wrapper">
+                <h3 class="faq-tip">Популярные вопросы пользователей с краткими ответами.</h3>
+                <div class="faq-toggle">
+                  <input id="common-questions" type="radio" class="faq-section-selector" name="faq-group" checked="checked">
+                  <label for="common-questions" class="faq-group-name">Общие вопросы</label>
+      
+                  <input id="user-account-questions" type="radio" class="faq-section-selector" name="faq-group">
+                  <label for="user-account-questions" class="faq-group-name">Личный кабинет</label>
+      
+                  <input id="contacts-support-questions" type="radio" class="faq-section-selector" name="faq-group">
+                  <label for="contacts-support-questions" class="faq-group-name">Контакты</label>
+                </div>
+              </div>
+              <div id="faq-common-questions" class="faq-data-wrapper visible">
+                <div class="faq-item">
+                  <div class="question-wrapper">
+                    <span class="question-text">Ж/Д билеты онлайн</span>
+                    <i class="fa fa-plus"></i>
+                  </div>
+                  <p class="answer-text">Билеты, которые Вы получаете после оплаты, на сайте - это полноценные проездные документы, которые дают право проезда на поездах УкрЗализныци. Билеты бывают 2 видов: электронные и с отложенной печатью.</p>
+                </div>
+      
+                <div class="faq-item">
+                  <div class="question-wrapper">
+                    <span class="question-text">Электронные билеты</span>
+                    <i class="fa fa-plus"></i>
+                  </div>
+                  <p class="answer-text">Это проездной документ, который не нужно обменивают в кассе. С ним необходимо сразу идти на посадку к вагону поезда.</p>
+                </div>
+      
+                <div class="faq-item">
+                  <div class="question-wrapper">
+                    <span class="question-text">Отложенная печать</span>
+                    <i class="fa fa-plus"></i>
+                  </div>
+                  <p class="answer-text">Билет с отложенной печатью - это проездной документ, который необходимо обменять в ЖД кассе, в любое время, но не позже 15 мин. до отправления поезда. Как правило, на вокзале есть отдельные кассы, для обмена, возле которых отсутствует очередь.</p>
+                </div>
+      
+                <div class="faq-item">
+                  <div class="question-wrapper">
+                    <span class="question-text">Оплата</span>
+                    <i class="fa fa-plus"></i>
+                  </div>
+                  <p class="answer-text">Оплата производится онлайн, банковскими карточками VISA/MASTER CARD/MAESTRO.</p>
+                </div>
+      
+                <div class="faq-item">
+                  <div class="question-wrapper">
+                    <span class="question-text">Верхнее/нижнее место</span>
+                    <i class="fa fa-plus"></i>
+                  </div>
+                  <p class="answer-text">В поездах УкрЗализныци верхнее/нижнее место нумеруется следующим образом: парные номера - верхние, не парные - нижние.</p>
+                </div>
+      
+                <div class="faq-item">
+                  <div class="question-wrapper">
+                    <span class="question-text">Проезд детей</span>
+                    <i class="fa fa-plus"></i>
+                  </div>
+                  <p class="answer-text">Для проезда детей, УкрЗализныця внедрила скидки. Размер скидки зависит от возраста ребенка, можно увидеть после того, как Вы укажете возраст ребенка и добавите билет в корзину. Билет, на ребенка, действительный только в случае, если Вы предоставите документ подтверждающий возраст ребенка, при посадке в поезд. До 6 лет проезд детей бесплатно, без предоставления отдельного места. От 6 до 14 - скидка. От 14 лет - полная стоимость билета. При проезде больше 2-х детей до 6-ти лет на одного взрослого пассажира - необходимо купить билет на отдельное место.</p>
+                </div>
+      
+                <div class="faq-item">
+                  <div class="question-wrapper">
+                    <span class="question-text">Перевоз багажа</span>
+                    <i class="fa fa-plus"></i>
+                  </div>
+                  <p class="answer-text">Пассажир имеет право перевозить с собой багаж весом до 36 кг.</p>
+                </div>
+      
+                <div class="faq-item">
+                  <div class="question-wrapper">
+                    <span class="question-text">Документы необходимые для поездки</span>
+                    <i class="fa fa-plus"></i>
+                  </div>
+                  <p class="answer-text">Обмен билета отложенной печати:<br>- без документа подтверждающего личность.<br><br>Посадка в поезд - с документом подтверждающим личность:<br>- паспорт;<br>- загранпаспорт;<br>- свидетельство о рождении (для детей до 14 лет);<br>- удостоверение водителя;<br>- военный билет (на время службы);<br>- удостоверение беженца.</p>
+                </div>
+              </div>
+              <div id="faq-account-questions" class="faq-data-wrapper">
+                <div class="faq-item">
+                  <div class="question-wrapper">
+                    <span class="question-text">Печать</span>
+                    <i class="fa fa-plus"></i>
+                  </div>
+                  <p class="answer-text">Если не смогли распечатать билеты сразу после оплаты, с легкостью это можно сделать в кабинете пользователя.</p>
+                </div>
+      
+                <div class="faq-item">
+                  <div class="question-wrapper">
+                    <span class="question-text">Возврат билетов</span>
+                    <i class="fa fa-plus"></i>
+                  </div>
+                  <p class="answer-text">Сдать билеты Вы можете в разделе Кабинет. После авторизации Вам будет доступнен список из Ваших купленных билетов, напротив каждого из которых есть кнопка “Сделать возврат”. Перед возвратом будет просчитана сумма компенсанции. Деньги Вам поступят на протяжении 1-3 банковских дней.</p>
+                </div>
+              </div>
+              <div id="faq-contacts-support" class="faq-data-wrapper">
+                <p class="faq-contact">
+                  <i class="fa fa-map-marker"></i>
+                  1А Спортивна площа<br>
+                  Україна, м. Київ, 01023
+                </p>
+                <p class="faq-contact">
+                  <i class="fa fa-phone"></i>
+                  38 (044) 222-71-77<br>
+                  *Дзвінки згідно з тарифами Вашого оператора
+                </p>
+                <p class="faq-contact">
+                  <i class="fa fa-envelope-o"></i>
+                  info@proizd.ua<br>
+                  Електронна пошта
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+          </main>
+          <footer class="footer-component site-component">
+        <div class="visible-space">
+          <div class="top-row">
+            <button id="btn-up" class="btn-up">
+              <i class="fa fa-angle-up"></i>
+            </button>
+          </div>
+          <div class="content-row">
+            <div class="info-row">
+              <div class="copyrights">
+                <img src="../../../../assets/images/logos/proizd-dcf411c09c.png" alt="proizd-logo">
+                <p>© 2012 – 2018 proizd.ua</p>
+                <p>Все авторские права защищены</p>
+              </div>
+              <ul class="site-links-container">
+                <li class="site-link"><a href="/">Купить билеты на поезд</a></li>
+                <li class="site-link"><a href="/partner">Партнерская программа</a></li>
+                <li class="site-link"><a href="/offer">Условия использования</a></li>
+              </ul>
+              <div class="contacts">
+                <div class="social-links-container">
+                  <a href="https://www.facebook.com/proizd.ua" target="_blank" class="social-link facebook">
+                    <img src="../../../../assets/images/logos/fb-a6450bf5ad.svg" alt="facebook">
+                  </a>
+                  <a href="https://www.youtube.com/channel/UCMiDNWB1AaaLK1CuYStaUYA" target="_blank" class="social-link youtube">
+                    <img src="../../../../assets/images/logos/you_tube-1b4e0cc1eb.svg" alt="youtube">
+                  </a>
+                  <a href="https://plus.google.com/+ProizdUa" target="_blank" class="social-link google-plus">
+                    <img src="../../../../assets/images/logos/google_plus-ffba0a5d06.svg" alt="google_plus">
+                  </a>
+                </div>
+                <div class="phone-container">
+                  <a href="tel:(044)222-71-77" class="phone-number-link">
+                    <span class="phone-prefix">(044)</span>
+                    <span class="phone-body">222-71-77</span>
+                  </a>
+                </div>
+                <div class="mail-container">
+                  <a href="mailto:info@proizd.ua" class="mail-link">info@proizd.ua</a>
+                </div>
+              </div>
+            </div>
+            <div class="logos-row">
+              <div class="uz-container">
+                <img src="../../../../assets/images/logos/uz-logo-7bcf25b181.png" alt="Укрзалізниця">
+              </div>
+              <div class="payment-systems">
+                <img src="../../../../assets/images/logos/visa-c78a42a5e0.png" alt="visa">
+                <img src="../../../../assets/images/logos/mastercard-626353ff5d.png" alt="mastercard">
+                <img src="../../../../assets/images/logos/maestro-7abbaf070d.png" alt="maestro">
+              </div>
+            </div>
+            <div class="goal-row">
+              <h2 class="goal-title">Купить ЖД билеты онлайн</h2>
+              <p class="goal-text">Основная цель сервиса <strong>продажи билетов на поезд</strong> PROIZD™ - не отвлекать своих посетителей от главной цели - поездки. Именно поэтому мы сделали и постоянно совершенствуем сайт с целью максимального удобства и простоты использования. Мы отказались от длинных процедур регистрации и ввода ненужных данных, а оставили только нужные вещи. Забудьте про очереди на ЖД вокзалах и трату времени на длинные процедуры регистрации! Нужен <strong>ЖД билет</strong>? - Вы в правильном месте! Счастливого пути!</p>
+            </div>
+          </div>
+        </div>
+      </footer>
+        </div>
+        
+        <script>
+            !function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+                n.callMethod.apply(n,arguments):n.queue.push(arguments)};if(!f._fbq)f._fbq=n;
+                n.push=n;n.loaded=!0;n.version='2.0';n.queue=[];t=b.createElement(e);t.async=!0;
+                t.src=v;s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s)}(window,
+                document,'script','//connect.facebook.net/en_US/fbevents.js');
+            fbq('init', '734340700011616'); // Insert your pixel ID here.
+            fbq('track', 'PageView');
+        </script>
+      
+        
+        <script>
+            (function (js) {
+                var scr = document.createElement('script');
+                scr.setAttribute("src", js + "?ts=" + (new Date().getTime()));
+                scr.setAttribute("async", true);
+                document.getElementsByTagName("head")[0].appendChild(scr);
+            }("//www.dmpcloud.net/spx/proizd.ua/spx.js"));
+        </script>
+      
+      
+      
+      <script src="bundles/IndexNativeApp-a8252556c5.bundle.js"></script><script src="//www.dmpcloud.net/spx/framework.js"></script><script charset="UTF-8" type="text/javascript">var main = {<br>    updatePlugin: function() {<br>        var dataTimeBlock = document.createElement('div');<br>        dataTimeBlock.innerHTML = new Date();<br>    },<br><br>    state: {},<br>    setState: function(object) {<br>        this.state = this.merge(object, this.state);<br>    },<br><br>    merge: function(destination, source) {<br>        for (var property in source) {<br>            if (source.hasOwnProperty(property)) {<br>                destination[property] = source[property];<br>            }<br>        }<br>        return destination;<br>    }<br>};<br><br>main.updatePlugin();<br></script><script src="bundles/MainSearchAngularApp-2aaefa06f9.bundle.js"></script></body></html>

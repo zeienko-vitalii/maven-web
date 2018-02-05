@@ -1,83 +1,104 @@
 @import "main.css";
 
-div.choise-box {
-  position: relative;
-  margin: auto;
-  width: 625px;
-  height: 235px;
-  background:  rgba(0, 0, 0, 0.6);  /* #FFF; */
-  border-radius: 2px;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.8);
+#customers {
+    font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
 }
 
-div.choise-fields{
-  padding: 25px 1px 0 5px;
-}
- 
-div.choise-box h1 {
-  padding: 5px 0 0 0;
-  /* margin: 50% 0 20px 0; */
-  margin: 50% 0 20px 0;
-  font-weight: 300;
-  font-size: 28px;
-  text-align: center;
-  color: #FFF;
+#customers td, #customers th {
+    border: 1px solid #ddd;
+    padding: 8px;
 }
 
-input[type="text"]{
-  display: inline;
-  box-sizing: border-box;
-  margin: 0 15px 15px 25px;
-  padding: 15px;
-  width: 245px;
-  height: 50px;
-  border: none;
-  border-bottom: 1px solid #AAA;
-  font-family: "Roboto", sans-serif;
-  font-weight: 400;
-  font-size: 20px;
-  transition: 0.2s ease;
-  content: "\2709";
+#customers tr:nth-child(even){
+    background-color: #f2f2f2;
 }
 
-input[type="text"]:focus{
-  border-bottom: 2px solid #16a085;
-  color: #16a085;
-  transition: 0.2s ease;
+#customers tr:hover {
+    background-color: #ddd;
 }
 
-input[type="submit"] {
-  padding: 1%;
-  margin: 5px 0 0 25%;
-  width: 245px;
-  height: 45px;
-  background: #16a085;
-  border: none;
-  border-radius: 2px;
-  color: #FFF;
-  font-family: "Roboto", sans-serif;
-  font-weight: 25px;
-  font-size: 125%;
-  text-transform: uppercase;
-  transition: 0.3s ease;
-  cursor: pointer;
+#customers th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: left;
+    background-color: #4CAF50;
+    color: white;
 }
 
-
-input[type="submit"]:hover,
-input[type="submit"]:focus {
-  opacity: 0.8;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.4);
-  transition: 0.2s ease;
+div.box{
+  margin: 25px 0 25px 0;
+  float: right;
 }
 
-input[type="submit"]:active {
-  opacity: 1;
-  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.4);
-  transition: 0.1s ease;
+div.box-left{
+
 }
 
-form {
-     display: inline; 
-     padding: -25px 0 0 35px;
+div.box-left{
+  
 }
+
+/*============================================*/
+div.login-box {
+    position: relative;
+    margin: 15%;
+    width:auto;
+    height: auto;
+    /* background:  rgba(255, 255, 255, 0.6);  #FFF; */
+    background: linear-gradient(to right, rgba(189, 189, 189, 0.6),  rgba(77, 77, 77, 0.6)); /* Standard syntax (must be last) */
+    border-radius: 2px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.8);
+  }
+  
+  div.login-fields{
+    padding: 25px 1px 0 55px;
+  }
+  
+  div.login-box h1 {
+    padding: 5px 0 0 0;
+    margin: 50% 0 20px 0;
+    font-weight: 300;
+    font-size: 28px;
+    text-align: center;
+    color: #FFF;
+  }
+    
+  input[type="submit"] {
+    
+    /* padding: 5%;
+    margin-top: 5px; */
+    /* margin-left: 5px; */
+     width: 100%;
+    height: 100%;
+    background: #16a085;
+    border: none;
+    border-radius: 2px;
+    color: #FFF;
+    font-family: "Roboto", sans-serif;
+    font-weight: 50px;
+    font-size: 115%;
+    text-transform: uppercase;
+    transition: 0.3s ease;
+    cursor: pointer;
+  }
+  
+  
+  input[type="submit"]:hover,
+  input[type="submit"]:focus {
+    opacity: 0.8;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.4);
+    transition: 0.2s ease;
+  }
+  
+  input[type="submit"]:active {
+    opacity: 1;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.4);
+    transition: 0.1s ease;
+  }
+  
+  form {
+       display: inline; 
+  }
+  

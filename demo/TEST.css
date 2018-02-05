@@ -1,0 +1,256 @@
+.main-container {
+    font-family: Gotham Pro Regular,Trebuchet MS,Helvetica,sans-serif;
+    font-size: 13px;
+    color: #5d5f61;
+    font-weight: 400;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    /* position: relative; */
+    height: 100%;
+}
+
+.trip-component {
+    margin-top: 0;
+    margin-bottom: 50px;
+}
+
+.visible-space {
+    width: 1200px;
+    -webkit-border-radius: 2px;
+    border-radius: 2px;
+}
+
+.visible-space, .working-space {
+    margin: auto;
+}
+div {
+    display: block;
+}
+
+.trip-component .trip-card {
+    padding: 30px;
+    background-color: #f4f7fa;
+    border: 1px solid rgba(184,189,211,.8);
+    -webkit-border-radius: 2px;
+    border-radius: 2px;
+}
+
+.trip-component .trip-card .trip-leg {
+    display: -webkit-flex!important;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+}
+
+.trip-component .trip-card .trip-leg .trip-info {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    width: 300px;
+    padding-right: 30px;
+    border-right: 1px solid rgba(184,189,211,.8);
+    color: #9096b9;
+}
+
+.trip-component .trip-card .trip-leg .trip-info {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    width: 300px;
+    padding-right: 30px;
+    border-right: 1px solid rgba(184,189,211,.8);
+    color: #9096b9;
+}
+
+.trip-component .trip-card .trip-leg .trip-info .transport-name {
+    color: #02c082;
+    line-height: 20px;
+    font-size: 16px;
+    font-weight: 300;
+}
+
+/* <h3 transport-name>
+<a href="/train/017О"> 017О Харьков-Пасс — Ужгород </a>
+ */
+
+ .trip-component .trip-card .trip-leg .trip-info .bottom-wrapper>*, .trip-component .trip-card .trip-leg .trip-info .top-wrapper>:not(:first-child) {
+    margin-top: 15px;
+}
+/*
+<div class="transport-properties"> <p>  Скорый Дизельный </p> <p> Фирменный </p> </div>
+ */
+
+/* 
+
+<div> <img class="transport-image" src="../../../../../assets/images/trip/DIESEL.png" alt="DIESEL"> </div>
+*/
+
+/* 
+
+<div class="itinerary-btn-wrapper">
+ <!----><button class="toggle-route-btn"> 
+ 
+<!----><!---->Маршрут поезда <!----> </button> </div>
+*/
+.trip-component .trip-card .trip-leg .trip-info .toggle-route-btn {
+    color: #f1aa56;
+    padding: 5px;
+    position: relative;
+    right: 5px;
+    -webkit-border-radius: 3px;
+    border-radius: 3px;
+    cursor: pointer;
+    -webkit-transition: background-color .15s cubic-bezier(.25,.8,.25,1);
+    -o-transition: background-color .15s cubic-bezier(.25,.8,.25,1);
+    transition: background-color .15s cubic-bezier(.25,.8,.25,1);
+}
+
+.trip-component .trip-card .trip-leg .trip-details .top-wrapper {
+    padding: 0 12px;
+}
+
+.trip-component .trip-card .trip-leg .trip-details .trip-duration-info, .trip-component .trip-card .trip-leg .trip-details .trip-stations {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+}
+
+
+.trip-component .trip-card .trip-leg .trip-details .trip-duration-info, .trip-component .trip-card .trip-leg .trip-details .trip-stations {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+}
+
+.trip-component .trip-card .trip-leg .trip-details .trip-duration-info .duration-wrapper {
+    -webkit-box-flex: 1;
+    -webkit-flex: 1 0 auto;
+    -ms-flex: 1 0 auto;
+    /* flex: 1 0 auto; */
+    padding: 0 30px;
+    text-align: center;
+}
+.trip-component .trip-card .trip-leg .trip-details .trip-duration-info .duration-wrapper .time-value {
+    color: #f1aa56;
+    margin-top: 8px;
+    font-size: 14px;
+}
+
+
+.trip-component .trip-card .trip-leg .trip-details .trip-duration-info .duration-wrapper .duration-arrow {
+    margin-top: 6px;
+    position: relative;
+    height: 1px;
+    background: rgba(184,189,211,.8);
+}
+
+.trip-component .trip-card .trip-leg .trip-details .trip-duration-info .duration-wrapper .duration-description {
+    margin-top: 8px;
+    color: #9096b9;
+}
+
+.trip-component .trip-card .trip-leg .trip-details .trip-duration-info .arrival-time-wrapper {
+    text-align: right;
+}
+
+.trip-component .trip-card .trip-leg .trip-details .trip-duration-info .arrival-time-wrapper .time-value, .trip-component .trip-card .trip-leg .trip-details .trip-duration-info .departure-time-wrapper .time-value {
+    font-size: 24px;
+}
+
+.trip-component .trip-card .trip-leg .trip-details .trip-duration-info .arrival-time-wrapper .weekday-value, .trip-component .trip-card .trip-leg .trip-details .trip-duration-info .departure-time-wrapper .weekday-value {
+    margin: 12px 0 5px;
+    color: #9096b9;
+}
+
+.main-container h1, .main-container h2, .main-container h3, .main-container h4, .main-container h5, .main-container h6, .main-container ol, .main-container p, .main-container ul {
+    margin: 0;
+    padding: 0;
+}
+
+.trip-component .trip-card .trip-leg .trip-details .trip-stations {
+    margin-top: 15px;
+    font-size: 16px;
+    color: #9096b9;
+    font-weight: 300;
+}
+.trip-component .trip-card .trip-leg .trip-details .arrival-station, .trip-component .trip-card .trip-leg .trip-details .departure-station {
+    max-width: 45%;
+}
+
+
+
+
+/* 
+
+<div class="trip-details">
+ <div class="top-wrapper"> 
+ <div class="trip-duration-info"> 
+ <div class="departure-time-wrapper">
+  <p class="time-value">15:12</p> 
+  <p class="weekday-value">Вторник</p>
+   <p class="date-value">13 февраля</p>
+    </div> <div class="duration-wrapper"> 
+    <p class="time-value">13:36</p> 
+    <div class="duration-arrow">
+    ::before
+    ::after
+    </div>
+     <p class="duration-description">время в пути</p> 
+     </div> <div class="arrival-time-wrapper">
+      <p class="time-value">04:48</p> 
+      <p class="weekday-value">Среда</p> 
+      <p class="date-value">14 февраля</p> 
+      
+      </div> </div> <h3 class="trip-stations"> 
+      <div class="departure-station"> 
+      <div class="departure-station-name">Харьков-Пасс</div>
+      <div class="departure-station-address"></div>
+      </div> <div class="arrival-station">
+       <div class="arrival-station-name">Львов</div>
+        <div class="arrival-station-address"></div>
+         </div> </h3> </div> <!----><div class="bottom-wrapper">
+          <!----><div class="transport-type-info">
+           <div class="wagon-features-container">
+            <span class="wagon-type">Люкс:</span> 
+            <!----><!----> <!---->
+            <span class="wagon-class">Стандартный<!----><!---->,</span> 
+            <span class="free-seats"> <!----> 7 <!----><!---->
+            <!----><!----><!----><!----><!---->мест 
+             <!----> </span>  </div> <!----> 
+             <div class="wagon-info-container"> 
+             <!----><span class="ticket-price"> 
+             <!----> <span class="price-value"> 
+             1513.07
+              </span>  <!----> <span class="price-currency">ГРН</span>
+               </span> <!----> <button class="select-type-btn">
+                <!----> <!---->Выбрать <!---->
+                 <i class="fa fa-angle-right"></i> 
+                  <!----> </button> 
+                  </div> 
+                  </div>
+                   </div> 
+                   <!----> </div>
+*/
+
